@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kumla Altar</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css" />
+    <link rel="stylesheet" href="bower-components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-app="kumlaAltarApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div id="logo" class="col-xs-8 col-lg-5">
+                        <a ui-sref="home">
+                            <img src="images/logo.png">
+                        </a>
+                    </div>
+                    <div class="col-xs-5 col-lg-7">
+                        <button type="button" id="btn-blog" class="btn btn-lg active">Kumla blog</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="navbar-main" class="navbar navbar-fixed-top" role="navigation">
+                        <div class="container">
+                            <div>
+                                <ul id="navbar-main-menu" class="nav navbar-nav">
+                                    <!--Project dropdown-->
+                                    <li class="dropdown">
+                                        <div class="dropdown-toggle" data-toggle="dropdown">Project<span class="caret"></span></div>
+                                        <ul class="dropdown-menu">
+                                            <li><a ui-sref="project1">Participants</a></li>
+                                            <li><a ui-sref="project2">Funding</a></li>
+                                            <li><a ui-sref="project2">Aims and goals</a></li>
+                                        </ul>
+                                    </li>
+                                    <!--History dropdown-->
+                                    <li class="dropdown">
+                                        <div class="dropdown-toggle" data-toggle="dropdown">History<span class="caret"></span></div>
+                                        <ul class="dropdown-menu">
+                                            <li><a ui-sref="history1">Project1</a></li>
+                                            <li><a ui-sref="history2">Project2</a></li>
+                                        </ul>
+                                    </li>
+                                    <!--Conservation dropdown-->
+                                    <li class="dropdown">
+                                        <div class="dropdown-toggle" data-toggle="dropdown">Conservation<span class="caret"></span></div>
+                                        <ul class="dropdown-menu">
+                                            <li><a ui-sref="conservation1">Conservation1</a></li>
+                                            <li><a ui-sref="conservation2">Conservation2</a></li>
+                                        </ul>
+                                    </li>
+                                    <!--History dropdown-->
+                                    <li class="dropdown">
+                                        <div class="dropdown-toggle" data-toggle="dropdown">History<span class="caret"></span></div>
+                                        <ul class="dropdown-menu">
+                                            <li><a ui-sref="history1">History1</a></li>
+                                            <li><a ui-sref="history2">History2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <div id="main-wrapper" class="container">
+            <main>
+                <div ui-view></div>
+            </main>
+        </div>
+
+
+        <footer>
+            <div class="container">
+
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
