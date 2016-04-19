@@ -10,7 +10,6 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css" />
-    <link rel="stylesheet" href="bower-components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -39,7 +38,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div id="navbar-main" class="navbar navbar-fixed-top" role="navigation">
+                    <div id="navbar-main" class="navbar navbar-fixed-top" role="navigation" ng-controller="MenuController as menu">
                         <div class="container">
                             <div>
                                 <ul id="navbar-main-menu" class="nav navbar-nav">
@@ -47,33 +46,28 @@
                                     <li class="dropdown">
                                         <div class="dropdown-toggle" data-toggle="dropdown">Project<span class="caret"></span></div>
                                         <ul class="dropdown-menu">
-                                            <li><a ui-sref="project1">Participants</a></li>
-                                            <li><a ui-sref="project2">Funding</a></li>
-                                            <li><a ui-sref="project2">Aims and goals</a></li>
+                                            <li ng-repeat="project in menu.projects"><a ui-sref="{{ project.url }}">{{ project.title }}</a></li>
                                         </ul>
                                     </li>
                                     <!--History dropdown-->
                                     <li class="dropdown">
                                         <div class="dropdown-toggle" data-toggle="dropdown">History<span class="caret"></span></div>
                                         <ul class="dropdown-menu">
-                                            <li><a ui-sref="history1">Project1</a></li>
-                                            <li><a ui-sref="history2">Project2</a></li>
+                                            <li ng-repeat="history in menu.history"><a ui-sref="{{ history.url }}">{{ history.title }}</a></li>
                                         </ul>
                                     </li>
                                     <!--Conservation dropdown-->
                                     <li class="dropdown">
                                         <div class="dropdown-toggle" data-toggle="dropdown">Conservation<span class="caret"></span></div>
                                         <ul class="dropdown-menu">
-                                            <li><a ui-sref="conservation1">Conservation1</a></li>
-                                            <li><a ui-sref="conservation2">Conservation2</a></li>
+                                            <li ng-repeat="conservation in menu.conservation"><a ui-sref="{{ conservation.url }}">{{ conservation.title }}</a></li>
                                         </ul>
                                     </li>
                                     <!--History dropdown-->
                                     <li class="dropdown">
-                                        <div class="dropdown-toggle" data-toggle="dropdown">History<span class="caret"></span></div>
+                                        <div class="dropdown-toggle" data-toggle="dropdown">Materials<span class="caret"></span></div>
                                         <ul class="dropdown-menu">
-                                            <li><a ui-sref="history1">History1</a></li>
-                                            <li><a ui-sref="history2">History2</a></li>
+                                            <li ng-repeat="material in menu.materials"><a ui-sref="{{ material.url }}">{{ material.title }}</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -130,6 +124,8 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/menu.controller.js"></script>
+    <script src="scripts/controllers/participants.controller.js"></script>
     <!-- endbuild -->
 </body>
 

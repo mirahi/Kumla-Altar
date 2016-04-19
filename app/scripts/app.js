@@ -29,46 +29,91 @@ angular
             })
             // Project
             .state('project1', {
-                url: '/project1',
+                url: '/project/participants',
                 templateUrl: '../views/project/project1.html',
-                controller: ''
+                controller: 'ParticipantsController as participants'
             })
             .state('project2', {
-                url: '/project2',
+                url: '/project/funding',
                 templateUrl: '../views/project/project2.html',
+                controller: ''
+            })
+            .state('project3', {
+                url: '/project/aims-and-goals',
+                templateUrl: '../views/project/project3.html',
                 controller: ''
             })
             // History
             .state('history1', {
-                url: '/history1',
+                url: '/history/history-of-the-altar',
                 templateUrl: '../views/history/history1.html',
                 controller: ''
             })
             .state('history2', {
-                url: '/history2',
+                url: '/history/medieval-workshop-practice',
                 templateUrl: '../views/history/history2.html',
+                controller: ''
+            })
+            .state('history3', {
+                url: '/history/medieval-techniques',
+                templateUrl: '../views/history/history3.html',
+                controller: ''
+            })
+            .state('history4', {
+                url: '/history/decoration',
+                templateUrl: '../views/history/history4.html',
+                controller: ''
+            })
+            .state('history5', {
+                url: '/history/annunciation',
+                templateUrl: '../views/history/history5.html',
+                controller: ''
+            })
+            .state('history6', {
+                url: '/history/passion-of-the-christ',
+                templateUrl: '../views/history/history6.html',
+                controller: ''
+            })
+            .state('history7', {
+                url: '/history/sculptures',
+                templateUrl: '../views/history/history7.html',
                 controller: ''
             })
             // Conservation
             .state('conservation1', {
-                url: '/conservation1',
+                url: '/conservation/conservation-and-treatments',
                 templateUrl: '../views/conservation/conservation1.html',
                 controller: ''
             })
             .state('conservation2', {
-                url: '/conservation2',
+                url: '/conservation/before-and-after',
                 templateUrl: '../views/conservation/conservation2.html',
+                controller: ''
+            })
+            .state('conservation3', {
+                url: '/conservation/materials-and-tools',
+                templateUrl: '../views/conservation/conservation3.html',
                 controller: ''
             })
             // Materials
             .state('materials1', {
-                url: '/materials1',
+                url: '/materials/xrf',
                 templateUrl: '../views/materials/materials1.html',
                 controller: ''
             })
             .state('materials2', {
-                url: '/materials2',
+                url: '/materials/ftir',
                 templateUrl: '../views/materials/materials2.html',
+                controller: ''
+            })
+            .state('materials3', {
+                url: '/materials/paint-cross-sections',
+                templateUrl: '../views/materials/materials3.html',
+                controller: ''
+            })
+            .state('materials4', {
+                url: '/materials/summary',
+                templateUrl: '../views/materials/materials4.html',
                 controller: ''
             });
     });

@@ -1,1 +1,89 @@
-<h1>Participants</h1>
+<div>
+    <ul>
+        <li ng-repeat="image in participants.images">
+            <a ng-click="openLightboxModal($index)">
+                <!--
+                    <img ng-src="{{image.url}}" class="img-thumbnail">
+                    -->
+                    
+                    <div style="background-image: url('{{image.url}}'); background-size: cover; width: 100px; height: 100px;">
+                    </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<article>
+
+    <h1>Participants</h1>
+
+    <p>
+        Total of 26 conservation students (16 from Finland, 6 from Norway and 4 from Sweden) and 5 lectures as well as conservator
+        Håkan Lindberg and some other staff members from the Swedish History Museum were taking part of the first phase of
+        the project.
+    </p>
+
+    <h2>Helsinki Metropolia University of Applied Sciences (Finland) - Coordinator of the project</h2>
+    <ul>
+        <li>Tannar Ruuben, MSc; MA, senior lecturer in paintings conservation</li>
+        <li>Paula Niskanen, MA, senior lecturer in furniture conservation</li>
+    </ul>
+
+    <h2>University of Oslo (Norway)</h2>
+    <ul>
+        <li>Douwtje van der Meulen, University lecturer, conservator</li>
+        <li>Nöelle L. W. Streeton, PhD; Associate Professor</li>
+    </ul>
+
+    <h2>University of Gothenburg (Sweden)</h2>
+    <ul>
+        <li>Elizabeth Ellen Peacock, BA, MAC, PhD, FIIC, Professor of Conservation</li>
+    </ul>
+
+    <h2>The Swedish History Museum (Sweden)</h2>
+    <ul>
+        <li>Håkan Lindberg, conservator</li>
+    </ul>
+
+    <h2>Participating conservation students</h2>
+    <ul>
+        <li>Helsinki Metropolia University of Applied Sciences (Finland)</li>
+        <ul>
+            <li>Salla Koskiniemi, paintings conservation</li>
+            <li>Susanna Belinskij, paintings conservation</li>
+            <li>Naoko Pellinen, paintings conservation</li>
+            <li>Aino Sainio, paintings conservation</li>
+            <li>Anna von Numers, paintings conservation</li>
+            <li>Saskia Raitala, paintings conservation</li>
+            <li>Ilona Jaaranen, paintings conservation</li>
+            <li>Viivi Vierinen, paintings conservation</li>
+            <li>Veera Lopez-Lehto, paintings conservation</li>
+            <li>Pirjo Leppikangas, furniture conservation</li>
+            <li>Arne Rannaoja, furniture conservation</li>
+            <li>Elviira Heikkilä, furniture conservation</li>
+            <li>Jenni Tiipiö, furniture conservation</li>
+            <li>Sanna Kapanen, furniture conservation</li>
+            <li>Laura Karoniemi, furniture conservation, spent 3 month Internship with the project</li>
+            <li>Aura Colliander, furniture conservation, spent 3 month Internship with the project</li>
+        </ul>
+        <li>University of Gothenburg (Sweden)</li>
+        <ul>
+            <li>Ingrid Sögaard, paintings conservation</li>
+            <li>Lina Danielsson, paintings conservation</li>
+            <li>Emma Imnell, paintings conservation</li>
+            <li>Lu Zyskowska, paintings conservation</li>
+        </ul>
+        <li>University of Oslo, Norway</li>
+        <ul>
+            <li>Oda Grønnesby, paintings conservation</li>
+            <li>Ingeborg Christine Løvdal, paintings conservation</li>
+            <li>Margrethe Rudjord, paintings conservation</li>
+            <li>Tor Eirik Skaaland, paintings conservation</li>
+            <li>Lena Porsmo Stoveland, paintings conservation</li>
+            <li>Lise Sæter, paintings conservation</li>
+        </ul>
+    </ul>
+
+
+
+</article>
