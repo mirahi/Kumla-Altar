@@ -38,8 +38,8 @@
 }
 
 p, li {
-    font-family: 'Open Sans Light', sans-serif;
-    font-size: 1.3rem;
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 1.5rem;
 }
 
 // MAIN NAVIGATION STYLES
@@ -50,13 +50,27 @@ p, li {
         padding-top: 7px;
         
         font-family: 'Open Sans Semibold', Helvetica, Arial, sans-serif;
-        font-size: 1.3rem;
+        font-size: 1.7rem;
+    }
+    
+    ul {
+        width: 100%;
+        
+        li.dropdown {
+            width: 25%;
+            height: 100%;
+            
+            font-size: 1.5rem;
+            text-align: center;
+        }
     }
 }
 
+// CONTENT STYLES
+
 article {
     h1 {
-        margin-bottom: 10px;
+        margin-bottom: 25px;
         
         font-family: 'Open Sans Semibold', Helvetica, Arial, sans-serif;
     }
