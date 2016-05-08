@@ -21,13 +21,18 @@ angular
         $urlRouterProvider.otherwise('/home');
 
         $stateProvider
-            // Frontpage
+            // HOME
             .state('home', {
                 url: '/home',
                 templateUrl: '../views/home.html',
                 controller: ''
             })
-            // Project
+            // PROJECT
+            .state('project', {
+                url: '/project',
+                templateUrl: '../views/project/project.html',
+                controller: ''
+            })
             .state('project1', {
                 url: '/project/participants',
                 templateUrl: '../views/project/project1.html',
@@ -44,6 +49,11 @@ angular
                 controller: ''
             })
             // History
+            .state('history', {
+                url: '/history',
+                templateUrl: '../views/history/history.html',
+                controller: ''
+            })
             .state('history1', {
                 url: '/history/history-of-the-altar',
                 templateUrl: '../views/history/history1.html',
@@ -64,6 +74,33 @@ angular
                 templateUrl: '../views/history/history4.html',
                 controller: ''
             })
+            // HISTORY / DECORATION - KESKEN
+            .state('history4-1', {
+                url: '/history/decoration/1',
+                templateUrl: '../views/history/history4.html',
+                controller: ''
+            })
+            .state('history4-2', {
+                url: '/history/decoration/2',
+                templateUrl: '../views/history/history4.html',
+                controller: ''
+            })
+            .state('history4-3', {
+                url: '/history/decoration/3',
+                templateUrl: '../views/history/history4.html',
+                controller: ''
+            })
+            .state('history4-4', {
+                url: '/history/decoration/4',
+                templateUrl: '../views/history/history4.html',
+                controller: ''
+            })
+            .state('history4-5', {
+                url: '/history/decoration/5',
+                templateUrl: '../views/history/history4.html',
+                controller: ''
+            })
+            //
             .state('history5', {
                 url: '/history/annunciation',
                 templateUrl: '../views/history/history5.html',
@@ -79,7 +116,13 @@ angular
                 templateUrl: '../views/history/history7.html',
                 controller: ''
             })
-            // Conservation
+            
+            // CONSERVATION
+            .state('conservation', {
+                url: '/conservation',
+                templateUrl: '../views/conservation/conservation.html',
+                controller: ''
+            })
             .state('conservation1', {
                 url: '/conservation/conservation-and-treatments',
                 templateUrl: '../views/conservation/conservation1.html',
@@ -95,7 +138,13 @@ angular
                 templateUrl: '../views/conservation/conservation3.html',
                 controller: ''
             })
+            
             // Materials
+            .state('materials', {
+                url: '/materials',
+                templateUrl: '../views/materials/materials.html',
+                controller: ''
+            })
             .state('materials1', {
                 url: '/materials/xrf',
                 templateUrl: '../views/materials/materials1.html',

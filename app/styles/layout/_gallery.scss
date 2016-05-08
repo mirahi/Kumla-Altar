@@ -1,6 +1,34 @@
+// THUMBNAILS
 .img-thumbnail {
-    position: static;
-    height: 200px;
+    position: relative;
+    height: 150px;
+    margin: 0;
+    padding: 5px;
     
+    border: none;
     border-radius: 0;
+}
+
+// LIGHTBOX STYLING
+.modal-content {
+    border: none;
+    border-radius: 0;
+}
+
+.lightbox-image-caption {
+    position: absolute;
+    top: initial;
+    bottom: 0;
+    
+    margin: 0;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: initial;
+    
+    span {
+        background-color: initial;
+        color: white;
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 1.5rem;
+    }
 }

@@ -38,34 +38,58 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div id="navbar-main" class="navbar navbar-fixed-top" role="navigation" ng-controller="MenuController as menu">
+                    <div id="navbar-main" class="navbar" role="navigation" ng-controller="MenuController as menu">
                         <div class="container">
                             <div>
                                 <ul id="navbar-main-menu" class="nav navbar-nav">
                                     <!--Project dropdown-->
                                     <li class="dropdown">
-                                        <div class="dropdown-toggle" data-toggle="dropdown">Project<span class="caret"></span></div>
+                                        <a ui-sref="project">
+                                            <div class="" data-toggle="">Project<span class="caret"></span></div>
+                                        </a>
                                         <ul class="dropdown-menu">
                                             <li ng-repeat="project in menu.projects"><a ui-sref="{{ project.url }}">{{ project.title }}</a></li>
                                         </ul>
                                     </li>
                                     <!--History dropdown-->
                                     <li class="dropdown">
-                                        <div class="dropdown-toggle" data-toggle="dropdown">History<span class="caret"></span></div>
+                                        <a ui-sref="history">
+                                            <div class="" data-toggle="">History<span class="caret"></span></div>
+                                        </a>
                                         <ul class="dropdown-menu">
-                                            <li ng-repeat="history in menu.history"><a ui-sref="{{ history.url }}">{{ history.title }}</a></li>
+                                            <li ng-repeat="history in menu.history">
+
+                                                <a ng-if="!history.submenu" ui-sref="{{ history.url }}">{{ history.title }}</a>
+                                                <a ng-if="history.submenu" ui-sref="{{ history.url }}">{{ history.title }}</a>
+
+                                                <!--
+                                                <li ng-if="history.submenu" class="dropdown-submenu">
+                                                    <a tabindex="-1" href="#">{{history.title}} aa </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li ng-repeat="submenu in menu.history.submenu">
+                                                            <a ui-sref="{{ submenu.url }}">{{ submenu.title }}</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                -->
+                                                
+                                            </li>
                                         </ul>
                                     </li>
-                                    <!--Conservation dropdown-->
+                                    <!--Conservation dropdown--> 
                                     <li class="dropdown">
-                                        <div class="dropdown-toggle" data-toggle="dropdown">Conservation<span class="caret"></span></div>
+                                        <a ui-sref="conservation">
+                                            <div>Conservation<span class="caret"></span></div>
+                                        </a>
                                         <ul class="dropdown-menu">
                                             <li ng-repeat="conservation in menu.conservation"><a ui-sref="{{ conservation.url }}">{{ conservation.title }}</a></li>
                                         </ul>
                                     </li>
                                     <!--History dropdown-->
                                     <li class="dropdown">
-                                        <div class="dropdown-toggle" data-toggle="dropdown">Materials<span class="caret"></span></div>
+                                        <a ui-sref="materials">
+                                            <div>Materials<span class="caret"></span></div>
+                                        </a>
                                         <ul class="dropdown-menu">
                                             <li ng-repeat="material in menu.materials"><a ui-sref="{{ material.url }}">{{ material.title }}</a></li>
                                         </ul>
