@@ -1,0 +1,33 @@
+<article>
+
+    <h1>Gilded tin flower</h1>
+
+    <p>
+        One of the interesting elements found as decoration on the Kumla altar-piece is the gilded tin flower. (kuva
+    </p>
+    <p>
+        It was originally used as a row of flowers, each in the middle of roundels in the dividing border between the upper and lower
+        painted scenes of the Passion of Christ. (kuva 2).
+    </p>
+    <p>
+        The borders are painted with red and black and the areas between the roundels with tin flowers are decorated with a leaf
+        motive in silver with a copper green glaze. (kuva 3)
+    </p>
+    <p>
+        There are not a single complete flower left on the altar but there are all in all 3 incomplete flowers still left at the
+        very edges of the dividing border, two of them on the border between the two painted scenes of Passion - The Flagellation
+        and the Deposition from the Cross. (kuva 4)
+    </p>
+    
+    <section class="col-xs-12">
+        <div class="row">
+            <div ng-repeat="image in history45.images" class="img-thumbnail col-xs-6 col-sm-4 col-md-3">
+                <a ng-click="openLightboxModal($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</article>

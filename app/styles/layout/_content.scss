@@ -7,14 +7,20 @@
 }
 
 main {
+    float: left;
+    
     width: 100%;
     min-height: 500px;
     
-    padding: 30px;
+    padding: 50px;
     
     background-color: white;
 }
 
 article {
     margin: 10px 0;
+}
+
+.right {
+    float: right;
 }

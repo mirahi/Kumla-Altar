@@ -1,0 +1,94 @@
+<article>
+    <h1>Punch work patterns</h1>
+    <p>
+        Punching or punch work is commonly understood as tooling of the gold or silver by the impression or stamping of patterns
+        by means of a tool (punch), the tip of which is shaped with a figure or motif.
+    </p>
+    <p>
+        On the Kumla altar-piece there is punch work and impression technique used in many different decorated areas where gold and
+        silver leaf has been used. In closer inspection, punch work patterns on gold and silver are giving an idea of the
+        tools used to decorate the surface.
+    </p>
+    <p>
+        In the corpus and on both of the insides of the inner wings, the background is gilded on a thin chalk and animal glue ground.
+        The technique used is polished water gilding. There are richly punched haloes in the gilded background for each of
+        the sculptures, each and every one having different patterns. (Kuvat Haloes Corpus 1,2,3,4)(Kuvat Haloes Inner left
+        wing 1,2,3,4) (Kuvat Haloes Inner Right wing 1,2,3,4)
+    </p>
+    <p>
+        Punched haloes, although in a more simple pattern can also be found in the Passion of Christ scenes, again stamped in to
+        a polished water gilded background. (Kuvat Halos and punchwork other 1,2,3,4,)
+    </p>
+    <p>
+        Tools used to produce the punched and impressed patterns have most probably been 5 metal punches, having rather simple shapes.
+        The shapes found in the decorated areas include a flower–shaped one with five petals, a larger as well as a smaller
+        circle, a larger dot and a smaller dot.
+    </p>
+    <p>
+        Combining these five shapes, it has been possible to produce quite elaborate punched halo decorations for all sculptures
+        as well as punched border decorations in the gilded backgrounds of the Passion of Christ scenes.
+    </p>
+    <p>
+        In addition, an impression-making tool, shaped like a wheel, possibly rotella, similar to one used for pricking the paper
+        cartoon has been used to make lines consisting of minute dots. These can be found on silvered areas on soldiers´
+        armoury and helmets as well as part of the lines and delicate leaf motifs in the gilded backgrounds of the Passion
+        of Christ scenes. There is a possibility that some of the tiny dotted lines and shapes have been also made by using
+        a prick punch. (Kuvat Halos and punchwork other 5,6,7,8,9, 10,11)
+    </p>
+    <p>
+        Main round lines for haloes in between the punched patterns in the Kumla altar are probably made with the help of compass-like
+        tool. (Kuva Halos and punchwork other 12)
+    </p>
+
+    <h2>Corpus</h2>
+    <section class="col-xs-12">
+        <div class="row">
+            <div ng-repeat="image in history42.corpus" class="img-thumbnail col-xs-6 col-sm-4 col-md-3">
+                <a ng-click="openLightboxModalCorpus($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <h2>Inner left wing</h2>
+
+    <section class="col-xs-12">
+        <div class="row">
+            <div ng-repeat="image in history42.leftWing" class="img-thumbnail col-xs-6 col-sm-4 col-md-3">
+                <a ng-click="openLightboxModalLeftWing($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <h2>Inner right wing</h2>
+    
+    <section class="col-xs-12">
+        <div class="row">
+            <div ng-repeat="image in history42.rightWing" class="img-thumbnail col-xs-6 col-sm-4 col-md-3">
+                <a ng-click="openLightboxModalRightWing($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <h2>Other pictures</h2>
+    
+    <section class="col-xs-12">
+        <div class="row">
+            <div ng-repeat="image in history42.other" class="img-thumbnail col-xs-6 col-sm-4 col-md-3">
+                <a ng-click="openLightboxModalOther($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+</article>

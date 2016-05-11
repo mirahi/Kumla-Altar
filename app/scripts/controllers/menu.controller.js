@@ -25,8 +25,8 @@ angular
     
     menuData.history = [
       { url: 'history1', title: 'History of The Altar'},
-      { url: 'history2', title: 'Mediaval Workshop Practice'},
-      { url: 'history3', title: 'Mediaval Techniques'},
+      { url: 'history2', title: 'Medieval Workshop Practice'},
+      { url: 'history3', title: 'Medieval Techniques'},
       { url: 'history4', title: 'Decoration', submenu: [
         { url: 'history4-1', title: 'Decoration 1'},
         { url: 'history4-2', title: 'Decoration 2'},
@@ -45,7 +45,7 @@ angular
         { url: 'history4-3', title: 'Decoration 3'},
         { url: 'history4-4', title: 'Decoration 4'},
         { url: 'history4-5', title: 'Decoration 5'},
-    ]
+    ];
     
     menuData.conservation = [
       { url: 'conservation1', title: 'Conservation & Treatments' },

@@ -76,29 +76,29 @@ angular
             })
             // HISTORY / DECORATION - KESKEN
             .state('history4-1', {
-                url: '/history/decoration/1',
-                templateUrl: '../views/history/history4.html',
-                controller: ''
+                url: '/history/decoration/gilding-and-paint-layers',
+                templateUrl: '../views/history/history4-1.html',
+                controller: 'History41Controller as history'
             })
             .state('history4-2', {
-                url: '/history/decoration/2',
-                templateUrl: '../views/history/history4.html',
-                controller: ''
+                url: '/history/decoration/punch-work-patterns',
+                templateUrl: '../views/history/history4-2.html',
+                controller: 'History42Controller as history42'
             })
             .state('history4-3', {
-                url: '/history/decoration/3',
-                templateUrl: '../views/history/history4.html',
+                url: '/history/decoration/close-up-microscope-photos',
+                templateUrl: '../views/history/history4-3.html',
                 controller: ''
             })
             .state('history4-4', {
-                url: '/history/decoration/4',
-                templateUrl: '../views/history/history4.html',
-                controller: ''
+                url: '/history/decoration/tracery',
+                templateUrl: '../views/history/history4-4.html',
+                controller: 'History44Controller as history44'
             })
             .state('history4-5', {
-                url: '/history/decoration/5',
-                templateUrl: '../views/history/history4.html',
-                controller: ''
+                url: '/history/decoration/gilded-tin-flower',
+                templateUrl: '../views/history/history4-5.html',
+                controller: 'History45Controller as history45'
             })
             //
             .state('history5', {
@@ -126,7 +126,7 @@ angular
             .state('conservation1', {
                 url: '/conservation/conservation-and-treatments',
                 templateUrl: '../views/conservation/conservation1.html',
-                controller: ''
+                controller: 'Conservation1Controller as conservation1'
             })
             .state('conservation2', {
                 url: '/conservation/before-and-after',
