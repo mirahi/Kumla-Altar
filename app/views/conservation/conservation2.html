@@ -1,2 +1,134 @@
-<h1>Conservation2</h1>
-<p>Toka alasivu</p>
+<article>
+    <!-- BEFORE AND AFTER -->
+    <h1>Conservation and treatments</h1>
+    <div class="row">
+        <section class="col-md-6">
+            <h2>Cleaning wax</h2>
+            <ul>
+                <li>Surface dust was removed from all the surfaces with soft brush and vacuum cleaner. Especially the back sides
+                    of the sculptures had lots of surface dirt.</li>
+                <li>The wax and resin mixture on all the surfaces, used to consolidate the altar-piece in previous conservation
+                    treatment in 1950-s was removed both mechanically and with the help of petroleum benzene (boiling range
+                    100-140 °C, naphtha benzene). (Kuvat: Cleaning Wax 1, 2 ja 3)</li>
+            </ul>
+        </section>
+        <section class="col-xs-12 col-md-6 gallery">
+            <div class="row">
+                <div ng-repeat="image in conservation1.cleaningWax" class="img-thumbnail col-xs-4 col-sm-3 col-md-4">
+                    <a ng-click="openLightboxModalCleaningWax($index)">
+                        <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-md-6">
+            <h2>Cleaning</h2>
+            <ul>
+                <li>Cleaning of the remains of the wax was done with petroleum benzene (boiling range 100-140 °C, naphtha benzene),
+                    Fleming solution (ethanol 500ml, metylsalicylat 15ml, ammoniac 8ml) and with triammonium citrate and
+                    water (Kuvat: Cleaning 1 – 10)</li>
+            </ul>
+        </section>
+        <section class="col-xs-6 gallery">
+            <div class="row">
+                <div ng-repeat="image in conservation1.cleaning" class="img-thumbnail col-xs-4 col-sm-3 col-md-4">
+                    <a ng-click="openLightboxModalCleaning($index)">
+                        <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="row">
+        <section class="col-md-6">
+            <h2>Consolidation</h2>
+            <ul>
+                <li>Loose gesso ground, gilding and paint layers were consolidated using Lascaux Medium for Consolidation with
+                    the help of hot spatula and the excess of glue was removed with slightly moistened cotton wool. In many
+                    of the areas treated, consolidation was necessary prior to surface cleaning and wax removal. (Kuvat:
+                    Consolidation 1- 6)</li>
+                <li>Areas where surface protection paper had been attached to secure loose ground, gilding and paint were treated
+                    carefully either through the previously attached paper or after the paper had been removed. (Kuvat: Consolidation
+                    7 – 9)</li>
+                <li>There were areas on the painted and gilded surfaces where ground, gilding and paint layers had serious detachment
+                    due to shrinkage of wooden support. All the areas were consolidated successfully. (Kuvat: Consolidation
+                    10 – 14)
+                </li>
+            </ul>
+        </section>
+        <section class="col-xs-6 gallery">
+            <div class="row">
+                <div ng-repeat="image in conservation1.consolidation" class="img-thumbnail col-xs-4 col-sm-3 col-md-4">
+                    <a ng-click="openLightboxModalConsolidation($index)">
+                        <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <h2>Varnishing</h2>
+    <ul>
+        <li>Hot spatula was used to further attach the areas of paint, which had been previously consolidated with wax -resin
+            and were not in level with the rest of the surface.</li>
+        <li>Varnishing, before retouching, was done by brush with dammar resin varnish diluted with wood turpentine. Blue areas
+            of paint containing azurite were not varnished because this paint is supposed to be matt. (Kuva: Varnishing,
+            St Paul varnish before and after)</li>
+    </ul>
+    <section class="col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in conservation1.varnishing" class="img-thumbnail col-xs-4 col-sm-3 col-md-2">
+                <a ng-click="openLightboxModalVarnishing($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <h2>Retouching</h2>
+    <ul>
+        <li>Retouching was made using tratteggio technique with dry pigments in dammar that was diluted with wood turpentine.
+            Additional wood turpentine was used to dilute the dammar varnish further in order to match more matt surface
+            in some areas. The pigments used were Zink white, Raw Umber, Raw Sienna, Burnt Sienna and Bone Black. On the
+            corpus and inner sides of the inner wings, retouching was made also in tratteggio technique but using watercolours.
+            (Kuvat: Retouching 1-8)</li>
+    </ul>
+    <section class="col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in conservation1.retouching" class="img-thumbnail col-xs-4 col-sm-3 col-md-2">
+                <a ng-click="openLightboxModalRetouching($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <h2>Construction</h2>
+    <p>
+        Documentation in written and photographic form of the object under conservation including written documentation of all the
+        conservation materials and procedures used is essential part of conservation-restoration.
+    </p>
+    <p>
+        Construction drawings of the altar, skillfully done by furniture conservation students and close up photographs were also
+        part of the documentation. (Kuvat: Construction 1-5)
+    </p>
+    <section class="col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in conservation1.construction" class="img-thumbnail col-xs-4 col-sm-3 col-md-2">
+                <a ng-click="openLightboxModalConstruction($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</article>
