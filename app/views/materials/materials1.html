@@ -1,1 +1,98 @@
-<h1>XFR</h1>
+<article class="row">
+    <h1>XRF</h1>
+
+    <section class="col-xs-6" style="text-align: justify; text-justify: distribute;">
+        <h2>Description of XFR method</h2>
+        <p>
+            The visual investigation and characterisations of the Kumla Altar were aided by the use of a portable X-ray fluorescence
+            (XRF) spectrometer which allows in situ analysis of the painting materials. This non-invasive technique provides
+            qualitative elemental information about materials present in an object. When applied to paintings, the detection
+            of certain elements is often a good indication of which pigments have been used.
+        </p>
+        <p>
+            As the instrument is pointed towards an area of interest, X-rays are sent out and reflected back to a detector inside the
+            instrument. The radiation causes the orbiting electrons in the atoms to move to orbitals of higher energy levels.
+            To return to the ground state, other electrons fill the emptied spaces in the lower energy orbitals and emits
+            the excess energy as fluorescence. Because each element exhibits a characteristic fluorescence, it can be interpreted
+            from a XRF-spectrum and attributed to specific elements. Pigments can then be identified based on the known chemical
+            composition, combined with the visual observations of layering of materials on the object. In total, 38 spot
+            measurements on the Kumla Altar where collected and interpreted.
+        </p>
+        <p>
+            Usually the instrument is limited to detection of elements with atom weights above aluminium (Al), and it is therefore not
+            applicable to identify organic pigments and colorants, nor metallic elements of lighter weight. The complex layered
+            structure of the Kumla Altar, typical for paintings, also makes interpretation of the spectra challenging, as
+            it does not provide information about to which layer/layers the detected elements belong. For this reason, XRF
+            is a technique that works well in combination with microscope examinations of cross sections of paint layers.
+            The XRF results were therefore used complementary to cross sectional analysis and to SEM-EDX. Although cross
+            sections require microscopic samples to be taken, it can provide a more accurate understanding of the build-up
+            of layers and the materials that were used.
+        </p>
+        <h2>Results summary</h2>
+        <p>
+            Interpretation of the XRF-spectra and assigning elements to possible pigments and materials provided a better understanding
+            of the painting technique used to create the Kumla Altar. A wide variety of standard materials, contemporary
+            for when the altar was produced, were revealed.
+        </p>
+        <h3>Ground</h3>
+        <p>
+            The consistent presence of calcium in the XRF readings, gave clear indications that the paint layers are painted on top of
+            a chalk-glue ground. Generally the ground was applied directly on to the oak wood support. Gaps between corners
+            and joints of the boards where covered by canvas before the ground was applied. The use of chalk ground differ
+            slightly throughout the altar piece in regard to application and finish: from sanded and polished to rough with
+            evident drips on the exposed ground behind the sculptures. A final layer of chalk with iron oxide red was also
+            applied to the ground in some sectors on the corpus.
+        </p>
+        <h3>Metal foils</h3>
+        <p>
+            XRF identified comprehensive uses of gold and silver foils in the background, haloes, architectural elements, details in
+            clothing, as well as in stencils and appliques on the frames. In combination with punch marks and various combinations
+            of glazes and scumbles, this created rich decorative effects. Burnished water gilding can be seen in the background
+            and haloes of the painted figures, and have been applied on top of a pale red bole, pigmented with iron-oxide
+            and possible red lead. Gold and silver stencils on the frames are applied on top of lead-read paint.
+        </p>
+        <h3>Paint layers</h3>
+        <p>
+            Several hues of colours were used for modelling volume in sceneries and draperies. For example, two greens were used, but
+            only copper in general can be detected with XRF. Some greens without lead-tin yellow, applied directly on silver
+            foils, have discoloured extensively. Traces of iron could also suggest the addition of green earth in green passages.
+            Red colours were used in all their variety: vermilion, red lead, red ochres and realgar. The presence of organic
+            lakes and colorants, based on madder or kermes, could only be suggested by visual observation and the absence
+            of certain elements in the XRF spectra. Examinations with SEM-EDX of cross-sections later confirmed that layers
+            of lakes have been used quite extensively. The fading of red lakes on a red lead base, without the buffering
+            effect of vermilion, could be the cause behind the significant discolouration in some of these areas. The only
+            blue pigment identified was that of the copper based mineral pigment azurite. Different tones of blue have been
+            created by mixing azurite with lead white and possibly a purple lake. Two different violet colours were detected
+            on the wings. The colour of the Christs robe in the scene “Christ before Pilate” has a blue tone and consists
+            seemingly of azurite particles mixed with a red colour. A violet-red colour could also be seen in the painted
+            architecture and on some of the robes. The latter probably consist of a red pigment mixed with a purplish lake.
+            The interpretation of the violet colour was somewhat ambiguous, in regarding to the possible use of the purple
+            pigment Caput mortem. Comparison between the XRF-analysis of some areas indicates the presence of iron, Due to
+            the observed colour, it could indicate caput mortem. On the other hand, SEM-EDX proved the purplish colour to
+            be an organic lake, as there was no iron detected in the violet layer. Yellow can be seen in areas of clothing
+            and architecture as well as mixed with green and red passages. The assumed use of ochres and lead-tin yellow
+            was reinforced by the XRF. Lead white was the only truly white pigment available at the time the Altar was made,
+            and its appearance in the altarpiece is highly reflected in the XRF-readings. Black pigments based on carbon
+            are not possible to detect with this technique, but the visual characteristics of the black contour lines of
+            the figures, makes its presence reasonably secure.
+        </p>
+        <p>
+            As can be seen from the XRF-results, the workshop used a wide variety of pigments and materials to create the altarpiece,
+            all of which was commonly used in the medieval times and for the Lübeck workshop. Though the XRF spectra revealed
+            few surprises, there were a number of interesting findings nevertheless, which continue to shape impressions
+            about the aging and deterioration of certain materials found throughout this highly complex object.
+        </p>
+    </section>
+
+    <section class="col-xs-6 gallery">
+        <div class="row">
+            <div ng-repeat="image in materials1.images" class="img-thumbnail col-xs-4 col-sm-3 col-md-4">
+                <a ng-click="openLightboxModal($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</article>

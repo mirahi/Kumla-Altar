@@ -1,5 +1,14 @@
 footer {
-    height: 150px;
+    min-height: 150px;
     
     background-color: white;
+}
+
+.footer-logo {
+    height: 50px;
+    
+    img {
+        width: 100%;
+        padding: 5px;
+    }
 }

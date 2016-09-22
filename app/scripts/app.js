@@ -114,7 +114,7 @@ angular
             .state('history7', {
                 url: '/history/sculptures',
                 templateUrl: 'views/history/history7.html',
-                controller: ''
+                controller: 'History7Controller as history7'
             })
             
             // CONSERVATION
@@ -149,7 +149,7 @@ angular
             .state('materials1', {
                 url: '/materials/xrf',
                 templateUrl: 'views/materials/materials1.html',
-                controller: ''
+                controller: 'Materials1Controller as materials1'
             })
             .state('materials2', {
                 url: '/materials/ftir',
@@ -159,7 +159,7 @@ angular
             .state('materials3', {
                 url: '/materials/paint-cross-sections',
                 templateUrl: 'views/materials/materials3.html',
-                controller: ''
+                controller: 'Materials3Controller as materials3'
             })
             .state('materials4', {
                 url: '/materials/summary',

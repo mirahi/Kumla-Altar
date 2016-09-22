@@ -46,6 +46,17 @@
         The microscope images of the cross-sections show the paint layer build-up as well as combination of different pigments used
         in each layer. The cross-sections were also analyzed under UV light and the images are included here.
     </p>
+    
+    <section class="col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in materials3.images" class="img-thumbnail col-xs-4 col-sm-3 col-md-4">
+                <a ng-click="openLightboxModal($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
 
 </article>

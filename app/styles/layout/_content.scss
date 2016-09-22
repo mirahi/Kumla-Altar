@@ -19,6 +19,12 @@ main {
 
 article {
     margin: 10px 0;
+    
+    p {
+        text-align: justify;
+        text-justify: distribute;
+        -ms-text-justify: distribute;
+    }
 }
 
 .right {
