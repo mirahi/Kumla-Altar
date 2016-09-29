@@ -11,6 +11,46 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import 'layout/footer';
 @import 'layout/gallery';
 
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+.top-padding {
+  padding-top: 40px;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -21,6 +61,19 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 body {
     font-size: 62.5%;
     padding: 0;
+}
+
+.table {
+  font-size: 1.4rem;
+}
+
+.nordplus {
+  margin-top: 50px;
+  max-width: 300px;
+}
+
+.cf {
+  clear: both;
 }
 
 /* Custom page footer */
@@ -37,11 +90,11 @@ body {
     width: 100%;
     min-height: 100vh;
     
+    background-attachment: fixed;
     background-image: url('../images/background.jpg');
     background-size: cover;
 }
 
-/* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;

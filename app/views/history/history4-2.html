@@ -39,11 +39,13 @@
         Main round lines for haloes in between the punched patterns in the Kumla altar are probably made with the help of compass-like
         tool. (Kuva Halos and punchwork other 12)
     </p>
-
+    
+    <br />
     <h2>Corpus</h2>
-    <section class="col-xs-12">
+    <br />
+    <section class="gallery col-xs-12">
         <div class="row">
-            <div ng-repeat="image in history42.corpus" class="img-thumbnail col-xs-6 col-sm-4 col-md-3">
+            <div ng-repeat="image in history42.corpus" class="img-thumbnail col-xs-6 col-sm-3 col-md-3">
                 <a ng-click="openLightboxModalCorpus($index)">
                     <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
                     </div>
@@ -51,12 +53,13 @@
             </div>
         </div>
     </section>
-
+    
+    <br />
     <h2>Inner left wing</h2>
-
-    <section class="col-xs-12">
+    <br />
+    <section class="gallery col-xs-12">
         <div class="row">
-            <div ng-repeat="image in history42.leftWing" class="img-thumbnail col-xs-6 col-sm-4 col-md-3">
+            <div ng-repeat="image in history42.leftWing" class="img-thumbnail col-xs-6 col-sm-3 col-md-3">
                 <a ng-click="openLightboxModalLeftWing($index)">
                     <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
                     </div>
@@ -64,12 +67,13 @@
             </div>
         </div>
     </section>
-
-    <h2>Inner right wing</h2>
     
-    <section class="col-xs-12">
+    <br />
+    <h2>Inner right wing</h2>
+    <br />
+    <section class="gallery col-xs-12">
         <div class="row">
-            <div ng-repeat="image in history42.rightWing" class="img-thumbnail col-xs-6 col-sm-4 col-md-3">
+            <div ng-repeat="image in history42.rightWing" class="img-thumbnail col-xs-6 col-sm-3 col-md-3">
                 <a ng-click="openLightboxModalRightWing($index)">
                     <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
                     </div>
@@ -78,11 +82,12 @@
         </div>
     </section>
     
+    <br />
     <h2>Other pictures</h2>
-    
-    <section class="col-xs-12">
+    <br />
+    <section class="gallery col-xs-12">
         <div class="row">
-            <div ng-repeat="image in history42.other" class="img-thumbnail col-xs-6 col-sm-4 col-md-3">
+            <div ng-repeat="image in history42.other" class="img-thumbnail col-xs-6 col-sm-3 col-md-3">
                 <a ng-click="openLightboxModalOther($index)">
                     <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
                     </div>

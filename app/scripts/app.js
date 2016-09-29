@@ -57,7 +57,7 @@ angular
             .state('history1', {
                 url: '/history/history-of-the-altar',
                 templateUrl: 'views/history/history1.html',
-                controller: ''
+                controller: 'History1Controller as history1'
             })
             .state('history2', {
                 url: '/history/medieval-workshop-practice',
@@ -78,7 +78,7 @@ angular
             .state('history4-1', {
                 url: '/history/decoration/gilding-and-paint-layers',
                 templateUrl: 'views/history/history4-1.html',
-                controller: 'History41Controller as history'
+                controller: 'History41Controller as history41'
             })
             .state('history4-2', {
                 url: '/history/decoration/punch-work-patterns',
@@ -104,25 +104,75 @@ angular
             .state('history5', {
                 url: '/history/annunciation',
                 templateUrl: 'views/history/history5.html',
-                controller: ''
+                controller: 'History5Controller as history5'
             })
             .state('history6', {
                 url: '/history/passion-of-the-christ',
                 templateUrl: 'views/history/history6.html',
                 controller: ''
             })
+            // SCULPTURES
             .state('history7', {
                 url: '/history/sculptures',
                 templateUrl: 'views/history/history7.html',
                 controller: 'History7Controller as history7'
             })
-            
+            .state('history7-1', {
+                url: '/history/sculptures/the-virgin',
+                templateUrl: 'views/history/history7-1.html',
+                controller: 'History71Controller as history71'
+            })
+            .state('history7-2', {
+                url: '/history/sculptures/christ',
+                templateUrl: 'views/history/history7-2.html',
+                controller: 'History72Controller as history72'
+            })
+            .state('history7-3', {
+                url: '/history/sculptures/st-eskil',
+                templateUrl: 'views/history/history7-3.html',
+                controller: 'History73Controller as history73'
+            })
+            .state('history7-4', {
+                url: '/history/sculptures/st-torkel',
+                templateUrl: 'views/history/history7-4.html',
+                controller: 'History74Controller as history74'
+            })
+            .state('history7-5', {
+                url: '/history/sculptures/st-gertrud',
+                templateUrl: 'views/history/history7-5.html',
+                controller: 'History75Controller as history75'
+            })
+            .state('history7-6', {
+                url: '/history/sculptures/st-olov',
+                templateUrl: 'views/history/history7-6.html',
+                controller: 'History76Controller as history76'
+            })
+            .state('history7-7', {
+                url: '/history/sculptures/st-paul',
+                templateUrl: 'views/history/history7-7.html',
+                controller: 'History77Controller as history77'
+            })
+            .state('history7-8', {
+                url: '/history/sculptures/st-peter',
+                templateUrl: 'views/history/history7-8.html',
+                controller: 'History78Controller as history78'
+            })
+            .state('history7-9', {
+                url: '/history/sculptures/st-erik',
+                templateUrl: 'views/history/history7-9.html',
+                controller: 'History79Controller as history79'
+            })
+            .state('history7-10', {
+                url: '/history/sculptures/st-birgitta',
+                templateUrl: 'views/history/history7-10.html',
+                controller: 'History710Controller as history710'
+            })
             // CONSERVATION
             // kohta 3 controller väärä
             .state('conservation', {
                 url: '/conservation',
                 templateUrl: 'views/conservation/conservation.html',
-                controller: ''
+                controller: 'ConservationController as conservation'
             })
             .state('conservation1', {
                 url: '/conservation/conservation-and-treatments',

@@ -28,23 +28,26 @@ angular
       { url: 'history2', title: 'Medieval Workshop Practice'},
       { url: 'history3', title: 'Medieval Techniques'},
       { url: 'history4', title: 'Decoration', submenu: [
-        { url: 'history4-1', title: 'Decoration 1'},
-        { url: 'history4-2', title: 'Decoration 2'},
-        { url: 'history4-3', title: 'Decoration 3'},
-        { url: 'history4-4', title: 'Decoration 4'},
-        { url: 'history4-5', title: 'Decoration 5'},
+        { url: 'history4-1', title: 'Gilding and paint layers'},
+        { url: 'history4-2', title: 'Punch work patterns'},
+        { url: 'history4-3', title: 'Close up microscopic photos'},
+        { url: 'history4-4', title: 'Tracery'},
+        { url: 'history4-5', title: 'Gilded tin flower'},
     ]},
       { url: 'history5', title: 'Annunciation'},
       { url: 'history6', title: 'Passion of The Christ'},
-      { url: 'history7', title: 'Sculptures'}
-    ];
-    
-    menuData.history4 = [
-        { url: 'history4-1', title: 'Decoration 1'},
-        { url: 'history4-2', title: 'Decoration 2'},
-        { url: 'history4-3', title: 'Decoration 3'},
-        { url: 'history4-4', title: 'Decoration 4'},
-        { url: 'history4-5', title: 'Decoration 5'},
+      { url: 'history7', title: 'Sculptures', submenu: [
+        { url: 'history7-1', title: 'The Virgin'},
+        { url: 'history7-2', title: 'Christ'},
+        { url: 'history7-3', title: 'St. Eskil'},
+        { url: 'history7-4', title: 'St. Torkel'},
+        { url: 'history7-5', title: 'St. Gertrud'},
+        { url: 'history7-6', title: 'St. Olov'},
+        { url: 'history7-7', title: 'St. Paul'},
+        { url: 'history7-8', title: 'St. Peter'},
+        { url: 'history7-9', title: 'St. Erik'},
+        { url: 'history7-10', title: 'St. Birgitta'},
+      ]}
     ];
     
     menuData.conservation = [

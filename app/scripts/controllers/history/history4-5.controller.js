@@ -15,44 +15,44 @@ angular
 
         vm.images = [
             {
-                url: 'http://placehold.it/1280x720',
+                url: 'images/history/history45/720_1.jpg',
                 caption: '1. Incomplete gilded tin flower',
-                thumbUrl: 'http://placehold.it/150x150'
+                thumbUrl: 'images/history/history45/720_1.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
+                url: 'images/history/history45/720_2.jpg',
                 caption: '2. The border',
-                thumbUrl: 'http://placehold.it/150x150'
+                thumbUrl: 'images/history/history45/720_2.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
+                url: 'images/history/history45/720_3.jpg',
                 caption: '3. The leaf motive in silver with copper green glaze',
-                thumbUrl: 'http://placehold.it/150x150'
+                thumbUrl: 'images/history/history45/720_3.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
+                url: 'images/history/history45/720_4.jpg',
                 caption: '4. The border between the The Flagellation and the Deposition from the Cross with incomplete gilded tin flowers on both ends of the border',
-                thumbUrl: 'http://placehold.it/150x150'
+                thumbUrl: 'images/history/history45/720_4.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
+                url: 'images/history/history45/720_5.jpg',
                 caption: '5. Molding made of the gilded tin flower',
-                thumbUrl: 'http://placehold.it/150x150'
+                thumbUrl: 'images/history/history45/720_5.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
+                url: 'images/history/history45/720_6.jpg',
                 caption: '6. Molding made of the gilded tin flower',
-                thumbUrl: 'http://placehold.it/150x150'
+                thumbUrl: 'images/history/history45/720_6.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
+                url: 'images/history/history45/720_7.jpg',
                 caption: '7. Border without flowers and the digital reconstruction of the border with gilded tin flowers',
-                thumbUrl: 'http://placehold.it/150x150'
+                thumbUrl: 'images/history/history45/720_7.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
+                url: 'images/history/history45/720_8.jpg',
                 caption: '8. Border without flowers and the digital reconstruction of the border with gilded tin flowers',
-                thumbUrl: 'http://placehold.it/150x150'
+                thumbUrl: 'images/history/history45/720_8.jpg'
             }
         ];
         

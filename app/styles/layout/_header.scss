@@ -39,8 +39,6 @@ header {
             }
         }
     }
-    
-    
 }
 
 #navbar-main-menu {
@@ -49,5 +47,19 @@ header {
 }
 
 .dropdown:hover .dropdown-menu {
-display: block;
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    display: none !important;
+    left: 100%;
+    top: 0;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block !important;
 }

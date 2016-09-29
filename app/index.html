@@ -64,21 +64,15 @@
                                             <div>History<span class="caret"></span></div>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li ng-repeat="history in menu.history">
+                                            <li ng-repeat="history in menu.history" class="dropdown-submenu">
 
                                                 <a ng-if="!history.submenu" ui-sref="{{ history.url }}">{{ history.title }}</a>
-                                                <a ng-if="history.submenu" ui-sref="{{ history.url }}">{{ history.title }}</a>
-
-                                                <!--
-                                                <li ng-if="history.submenu" class="dropdown-submenu">
-                                                    <a tabindex="-1" href="#">{{history.title}} aa </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li ng-repeat="submenu in menu.history.submenu">
-                                                            <a ui-sref="{{ submenu.url }}">{{ submenu.title }}</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                -->
+                                                <a ng-if="history.submenu" ui-sref="{{ history.url }}" tabindex="-1">{{ history.title }}</a>
+                                                <ul ng-if="history.submenu" class="dropdown-menu pull-right">
+                                                    <li ng-repeat="submenu in history.submenu">
+                                                         <a ui-sref="{{ submenu.url }}">{{ submenu.title }}</a>
+                                                    </li>
+                                                </ul>
                                                 
                                             </li>
                                         </ul>
@@ -122,16 +116,16 @@
             <div class="container">
                 <div class="row">
                 <figure class="footer-logo col-xs-6 col-md-3">
-                    <img src="images/logos/nordplus.png">
+                    <img style="padding-top: 30px;" class="img-responsive center-block" src="images/logos/nordplus.png">
                 </figure>
                 <figure class="footer-logo col-xs-6 col-md-3">
-                    <img src="images/logos/oslo.png">
+                    <img style="padding-top: 30px;" class="img-responsive center-block" src="images/logos/oslo.png">
                 </figure>
                 <figure class="footer-logo col-xs-6 col-md-3">
-                    <img src="images/logos/metropolia.png">
+                    <img class="img-responsive center-block" src="images/logos/metropolia.png">
                 </figure>
                 <figure class="footer-logo col-xs-6 col-md-3">
-                    <img src="images/logos/gothenburg.png">
+                    <img class="img-responsive center-block" src="images/logos/gothenburg.png">
                 </figure>
                 </div>
             </div>
@@ -172,13 +166,30 @@
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>
     <script src="scripts/controllers/menu.controller.js"></script>
+    
     <script src="scripts/controllers/project/participants.controller.js"></script>
+    
+    <script src="scripts/controllers/history/history1.controller.js"></script>
     <script src="scripts/controllers/history/history4-1.controller.js"></script>
     <script src="scripts/controllers/history/history4-2.controller.js"></script>
     <script src="scripts/controllers/history/history4-4.controller.js"></script>
     <script src="scripts/controllers/history/history4-5.controller.js"></script>
+    <script src="scripts/controllers/history/history5.controller.js"></script>
     <script src="scripts/controllers/history/history7.controller.js"></script>
+    <script src="scripts/controllers/history/history7-1.controller.js"></script>
+    <script src="scripts/controllers/history/history7-2.controller.js"></script>
+    <script src="scripts/controllers/history/history7-3.controller.js"></script>
+    <script src="scripts/controllers/history/history7-4.controller.js"></script>
+    <script src="scripts/controllers/history/history7-5.controller.js"></script>
+    <script src="scripts/controllers/history/history7-6.controller.js"></script>
+    <script src="scripts/controllers/history/history7-7.controller.js"></script>
+    <script src="scripts/controllers/history/history7-8.controller.js"></script>
+    <script src="scripts/controllers/history/history7-9.controller.js"></script>
+    <script src="scripts/controllers/history/history7-10.controller.js"></script>
+    
+    <script src="scripts/controllers/conservation/conservation.controller.js"></script>
     <script src="scripts/controllers/conservation/conservation1.controller.js"></script>
+    
     <script src="scripts/controllers/materials/materials1.controller.js"></script>
     <script src="scripts/controllers/materials/materials3.controller.js"></script>
     

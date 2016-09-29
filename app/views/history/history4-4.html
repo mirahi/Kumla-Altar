@@ -7,8 +7,7 @@
         side sections by architectonic buttresses with pinnacles. Over each side section there is one canopy, over central
         section two canopies. They are three-sided, consisting of upper level of bar tracery, architectonically framed in
         a crenelated crown, and a lower level, also consisting of bar tracery but confined below by stilted round arches,
-        three per canopy. In the round arches tracery there is a window- rose above and trefoil arch below. (Kuvat: Corpus
-        1,2,3,4,5)
+        three per canopy. In the round arches tracery there is a window- rose above and trefoil arch below.
     </p>
     <p>
         At base of the corpus panel is a common socle, whose indrawn front consists of a graceful tracery formed as a series of profiled
@@ -20,13 +19,14 @@
         in the centre part. The bar tracery at two levels recurs at a slightly broken angle, the lower row of bars forms
         the background of three somewhat stilted ogee arches with crockets and finial and rich fish-bladder tracery in openings
         of arch. Behind the bar tracery and socle bar tracery pasteboards alternating in red and blue have been placed to
-        intensify colour. (Kuvat: Inner left wing 1,2,3,4,5)ja (Kuvat: Inner right wing 1,2,3,4)
+        intensify colour.
     </p>
     
-    <h2>Corpus</h2>
+    <h2 class="cf top-padding">Corpus</h2>
+    
     <section class="col-xs-12">
         <div class="row">
-            <div ng-repeat="image in history44.corpus" class="img-thumbnail col-xs-6 col-sm-4 col-md-3">
+            <div ng-repeat="image in history44.corpus" class="img-thumbnail  col-xs-6 col-sm-4 col-md-5ths">
                 <a ng-click="openLightboxModalCorpus($index)">
                     <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
                     </div>
@@ -35,11 +35,11 @@
         </div>
     </section>
 
-    <h2>Inner left wing</h2>
+    <h2 class="cf top-padding">Inner left wing</h2>
 
     <section class="col-xs-12">
         <div class="row">
-            <div ng-repeat="image in history44.leftWing" class="img-thumbnail col-xs-6 col-sm-4 col-md-3">
+            <div ng-repeat="image in history44.leftWing" class="img-thumbnail  col-xs-6 col-sm-4 col-md-5ths">
                 <a ng-click="openLightboxModalLeftWing($index)">
                     <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
                     </div>
@@ -48,11 +48,11 @@
         </div>
     </section>
 
-    <h2>Inner right wing</h2>
+    <h2 class="cf top-padding">Inner right wing</h2>
     
     <section class="col-xs-12">
         <div class="row">
-            <div ng-repeat="image in history44.rightWing" class="img-thumbnail col-xs-6 col-sm-4 col-md-3">
+            <div ng-repeat="image in history44.rightWing" class="img-thumbnail  col-xs-6 col-sm-4 col-md-5ths">
                 <a ng-click="openLightboxModalRightWing($index)">
                     <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
                     </div>

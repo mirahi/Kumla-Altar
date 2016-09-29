@@ -1,1 +1,86 @@
-<h1>Annunciation</h1>
+<article>
+    <h1>Annunciation</h1>
+    
+    <figure class="col-xs-12 col-sm-6 col-md-5 pull-left">
+        <a ng-click="openLightboxModal(0)">
+            <img class="img-responsive" src="images/history/history5/720_1.jpg" alt="{{history5.images[0].caption}}"/>
+        </a>
+    </figure>
+    
+    <p>The Annunciation is the announcement by the angel Gabriel to the Virgin Mary that she would conceive 
+        through the power of the Holy Spirit and bear a son to be called Jesus, who would be a mighty ruler. The 
+        significance of the Annunciation in Christianity goes without saying: it is the first event in Mary’s life 
+        told in the Bible, it is when the incarnation of Christ is reckoned to have taken place, and holds great 
+        importance in the Church’s teaching on the conception of Jesus. Therefore, the theme of Annunciation 
+        enjoys prevalence in Christian art. While the three essential elements are the angel, the Virgin and the 
+        dove of the Holy Spirit descending towards her, as a popular theme during the Renaissance period, the 
+        annunciation is portrayed in many different ways by many different artists. The use of flowers is 
+        prevalent among those art works of the Annunciation, as the event took place in springtime, with lily 
+        being the main element symbolizing the purity of the Virgin. 
+    </p>
+    <p>    
+        When the wings of the altar are completely closed, the altar shows the Annunciation.
+    </p>
+    <p>
+        The Virgin Mary and the angel Gabriel each have their own wing, the Virgin Mary on the left and the 
+        Angel Gabriel on the right.
+    </p>
+    <p>
+        Both the Virgin Mary and the Angel Gabriel are standing on a pavement chequered diagonally in red and 
+        yellow. The background on both panels is red, with gold-shadowed stars. The Virgin with blond hair is in 
+        blue mantle with green lining, and red undergarment. She stands with raised hands before the reading 
+        desk. Behind her is a cupboard with open door for books.
+    </p>
+    <p> 
+        The Angel Gabriel is holding a cross and is wearing white and green mantle. In the Angel´s panel, in 
+        upper right corner, God the Father is presented within a cloud band.
+    </p>
+    <p>
+        In both panels there are long winding banderols with angelic salutations in minuscule script.
+    </p>
+    <p>
+        Unfortunately the both panels are largely damaged and thus the great, detailed color effects are difficult to 
+        comprehend now.
+        <br>
+        <br>
+    </p>
+    
+    <figure class="col-xs-12 col-sm-6 pull-left">
+        <a ng-click="openLightboxModal(1)">
+            <img class="img-responsive" src="images/history/history5/720_2.jpg" alt="{{history5.images[1].caption}}"/>
+        </a>
+    </figure>
+    
+    <figure class="col-xs-12 col-sm-6 pull-right">
+        <a ng-click="openLightboxModal(2)">
+            <img class="img-responsive" src="images/history/history5/720_3.jpg" alt="{{history5.images[2].caption}}"/>
+        </a>
+    </figure>
+
+    <br>    
+    <h2 class="cf" style="padding-top: 40px;">Virgin Mary</h2>
+    
+    <section class="col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in history5.images | limitTo:3:3" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
+                <a ng-click="openLightboxModal($index+3)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <h2 class="cf">Angel Gabriel</h2>
+    
+    <section class="col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in history5.images | limitTo:6:6" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
+                <a ng-click="openLightboxModal($index+6)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</article>

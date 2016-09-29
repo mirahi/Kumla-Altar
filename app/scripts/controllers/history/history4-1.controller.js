@@ -34,5 +34,27 @@ angular
         $scope.openLightboxModal = function (index) {
             Lightbox.openModal(vm.images, index);
         };
+        
+        vm.images2 = [
+            {
+                url: 'http://placehold.it/1280x720',
+                caption: '1',
+                thumbUrl: 'http://placehold.it/150x150'
+            },
+            {
+                url: 'http://placehold.it/1280x720',
+                caption: '2',
+                thumbUrl: 'http://placehold.it/150x150'
+            },
+            {
+                url: 'http://placehold.it/1280x720',
+                caption: '3',
+                thumbUrl: 'http://placehold.it/150x150'
+            }
+        ];
+        
+        $scope.openLightboxModal = function (index) {
+            Lightbox.openModal(vm.images, index);
+        };
 
     });
