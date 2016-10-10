@@ -60,4 +60,16 @@
     <p>
         <b>Other comments:</b> There is a heavily darkened old retouching on the left side of the garment.
     </p>
+    
+    <section class="top-padding col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in history76.images" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
+                <a ng-click="openLightboxModal($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
 </article>

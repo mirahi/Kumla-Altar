@@ -10,49 +10,44 @@
 angular
     .module('kumlaAltarApp')
     .controller('Materials1Controller', function ($scope, Lightbox) {
+        
+        var wrapper = document.getElementById('wrapper');
+        wrapper.style.backgroundImage = "url('images/backgrounds/material.jpg')";
 
         var vm = this;
 
         vm.images = [
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '1',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/materials/materials1/720_1.jpg',
+                thumbUrl: 'images/materials/materials1/720_1.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '2',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/materials/materials1/720_2.jpg',
+                thumbUrl: 'images/materials/materials1/720_2.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/materials/materials1/720_3.jpg',
+                thumbUrl: 'images/materials/materials1/720_3.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '4',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/materials/materials1/720_4.jpg',
+                thumbUrl: 'images/materials/materials1/720_4.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '5',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/materials/materials1/720_5.jpg',
+                thumbUrl: 'images/materials/materials1/720_5.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '6',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/materials/materials1/720_6.jpg',
+                thumbUrl: 'images/materials/materials1/720_6.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '7',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/materials/materials1/720_7.jpg',
+                thumbUrl: 'images/materials/materials1/720_7.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '8',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/materials/materials1/720_8.jpg',
+                thumbUrl: 'images/materials/materials1/720_8.jpg'
             }
         ];
         

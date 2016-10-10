@@ -109,7 +109,7 @@ angular
             .state('history6', {
                 url: '/history/passion-of-the-christ',
                 templateUrl: 'views/history/history6.html',
-                controller: ''
+                controller: 'History6Controller as history6'
             })
             // SCULPTURES
             .state('history7', {
@@ -168,7 +168,6 @@ angular
                 controller: 'History710Controller as history710'
             })
             // CONSERVATION
-            // kohta 3 controller väärä
             .state('conservation', {
                 url: '/conservation',
                 templateUrl: 'views/conservation/conservation.html',
@@ -182,12 +181,12 @@ angular
             .state('conservation2', {
                 url: '/conservation/before-and-after',
                 templateUrl: 'views/conservation/conservation2.html',
-                controller: 'Conservation1Controller as conservation1'
+                controller: 'Conservation2Controller as conservation2'
             })
             .state('conservation3', {
                 url: '/conservation/materials-and-tools',
                 templateUrl: 'views/conservation/conservation3.html',
-                controller: ''
+                controller: 'Conservation3Controller as conservation3'
             })
             
             // Materials
@@ -210,6 +209,11 @@ angular
                 url: '/materials/paint-cross-sections',
                 templateUrl: 'views/materials/materials3.html',
                 controller: 'Materials3Controller as materials3'
+            })
+            .state('materials3-1', {
+                url: '/materials/paint-cross-sections/samples',
+                templateUrl: 'views/materials/materials3-1.html',
+                controller: 'Materials31Controller as materials31'
             })
             .state('materials4', {
                 url: '/materials/summary',

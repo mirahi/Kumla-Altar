@@ -86,13 +86,22 @@
                                             <li ng-repeat="conservation in menu.conservation"><a ui-sref="{{ conservation.url }}">{{ conservation.title }}</a></li>
                                         </ul>
                                     </li>
-                                    <!--History dropdown-->
+                                    <!--Materials dropdown-->
                                     <li class="dropdown">
                                         <a ui-sref="materials">
                                             <div>Materials<span class="caret"></span></div>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li ng-repeat="material in menu.materials"><a ui-sref="{{ material.url }}">{{ material.title }}</a></li>
+                                            
+                                                <a ng-if="!material.submenu" ui-sref="{{ material.url }}">{{ material.title }}</a>
+                                                <a ng-if="material.submenu" ui-sref="{{ material.url }}" tabindex="-1">{{ material.title }}</a>
+                                                <ul ng-if="material.submenu" class="dropdown-menu pull-right">
+                                                    <li ng-repeat="submenu in material.submenu">
+                                                         <a ui-sref="{{ submenu.url }}">{{ submenu.title }}</a>
+                                                    </li>
+                                                </ul>
+                                        
                                         </ul>
                                     </li>
                                 </ul>
@@ -132,20 +141,6 @@
         </footer>
 
     </div>
-
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-    <!--
-    <script>
-        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
-    -->
     
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -164,7 +159,6 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/about.js"></script>
     <script src="scripts/controllers/menu.controller.js"></script>
     
     <script src="scripts/controllers/project/participants.controller.js"></script>
@@ -175,6 +169,7 @@
     <script src="scripts/controllers/history/history4-4.controller.js"></script>
     <script src="scripts/controllers/history/history4-5.controller.js"></script>
     <script src="scripts/controllers/history/history5.controller.js"></script>
+    <script src="scripts/controllers/history/history6.controller.js"></script>
     <script src="scripts/controllers/history/history7.controller.js"></script>
     <script src="scripts/controllers/history/history7-1.controller.js"></script>
     <script src="scripts/controllers/history/history7-2.controller.js"></script>
@@ -189,9 +184,12 @@
     
     <script src="scripts/controllers/conservation/conservation.controller.js"></script>
     <script src="scripts/controllers/conservation/conservation1.controller.js"></script>
+    <script src="scripts/controllers/conservation/conservation2.controller.js"></script>
+    <script src="scripts/controllers/conservation/conservation3.controller.js"></script>
     
     <script src="scripts/controllers/materials/materials1.controller.js"></script>
     <script src="scripts/controllers/materials/materials3.controller.js"></script>
+    <script src="scripts/controllers/materials/materials3-1.controller.js"></script>
     
     <!-- endbuild -->
 </body>

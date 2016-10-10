@@ -1,7 +1,5 @@
 <article class="row">
     <h1>XRF</h1>
-
-    <section class="col-xs-6" style="text-align: justify; text-justify: distribute;">
         <h2>Description of XFR method</h2>
         <p>
             The visual investigation and characterisations of the Kumla Altar were aided by the use of a portable X-ray fluorescence
@@ -28,6 +26,18 @@
             sections require microscopic samples to be taken, it can provide a more accurate understanding of the build-up
             of layers and the materials that were used.
         </p>
+        
+        <section class="top-padding col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in materials1.images" class="img-thumbnail col-xs-4 col-sm-4 col-md-5ths">
+                <a ng-click="openLightboxModal($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+        </section>
+    
         <h2>Results summary</h2>
         <p>
             Interpretation of the XRF-spectra and assigning elements to possible pigments and materials provided a better understanding
@@ -82,17 +92,9 @@
             few surprises, there were a number of interesting findings nevertheless, which continue to shape impressions
             about the aging and deterioration of certain materials found throughout this highly complex object.
         </p>
-    </section>
-
-    <section class="col-xs-6 gallery">
-        <div class="row">
-            <div ng-repeat="image in materials1.images" class="img-thumbnail col-xs-4 col-sm-3 col-md-4">
-                <a ng-click="openLightboxModal($index)">
-                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+        
+        <br>
+    
+    <p><a href="images/materials/materials1/Kumla_altar_XRF_table.pdf">Kumla Altar XRF Examination (PDF)</a></p>
 
 </article>

@@ -10,6 +10,9 @@
 angular
     .module('kumlaAltarApp')
     .controller('History5Controller', function ($scope, Lightbox) {
+        
+        var wrapper = document.getElementById('wrapper');
+        wrapper.style.backgroundImage = "url('images/backgrounds/history.jpg')";
 
         var vm = this;
 

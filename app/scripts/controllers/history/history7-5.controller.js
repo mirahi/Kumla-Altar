@@ -10,64 +10,52 @@
 angular
     .module('kumlaAltarApp')
     .controller('History75Controller', function ($scope, Lightbox) {
+        
+        var wrapper = document.getElementById('wrapper');
+        wrapper.style.backgroundImage = "url('images/backgrounds/history.jpg')";
 
         var vm = this;
 
         vm.images = [
             {
-                url: 'images/history/history7/720_1a.jpg',
-                caption: '1',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history75/720_1.jpg',
+                caption: 'St. Gertrud, seen from the front side before conservation',
+                thumbUrl: 'images/history/history75/720_1.jpg'
             },
             {
-                url: 'images/history/history7/720_1b.jpg',
-                caption: '2',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history75/720_2.jpg',
+                caption: 'St. Gertrud, seen from the left side before conservation',
+                thumbUrl: 'images/history/history75/720_2.jpg'
             },
             {
-                url: 'images/history/history7/720_1c.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history75/720_3.jpg',
+                caption: 'St. Gertrud, seen from the back side before conservation',
+                thumbUrl: 'images/history/history75/720_3.jpg'
             },
             {
-                url: 'images/history/history7/720_1d.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history75/720_4.jpg',
+                caption: 'St. Gertrud, seen from the right side before conservation',
+                thumbUrl: 'images/history/history75/720_4.jpg'
             },
             {
-                url: 'images/history/history7/720_2.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history75/720_5.jpg',
+                caption: 'St. Gertrud, detail photo of the face before conservation',
+                thumbUrl: 'images/history/history75/720_5.jpg'
             },
             {
-                url: 'images/history/history7/720_2a.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history75/720_6.jpg',
+                caption: 'St. Gertrud, detail photo of the church she is holding, before conservation',
+                thumbUrl: 'images/history/history75/720_6.jpg'
             },
             {
-                url: 'images/history/history7/720_3.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history75/720_7.jpg',
+                caption: 'St. Gertrud, detail photo of the water gilded garment with azurite blue lining before conservation',
+                thumbUrl: 'images/history/history75/720_7.jpg'
             },
             {
-                url: 'images/history/history7/720_4.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
-            },
-            {
-                url: 'images/history/history7/720_5.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
-            },
-            {
-                url: 'images/history/history7/720_group.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
-            },
-            {
-                url: 'images/history/history7/720_coronation.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history75/720_8.jpg',
+                caption: 'St. Gertrud, detail photo of the lower part of the sculpture and the base',
+                thumbUrl: 'images/history/history75/720_8.jpg'
             }
         ];
         

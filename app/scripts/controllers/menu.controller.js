@@ -59,7 +59,9 @@ angular
     menuData.materials = [
       { url: 'materials1', title: 'XRF' },
       { url: 'materials2', title: 'FTIR' },
-      { url: 'materials3', title: 'Paint Cross-Sections' },
+      { url: 'materials3', title: 'Paint Cross-Sections', submenu: [
+        { url: 'materials3-1', title: 'Samples'}
+      ]},
       { url: 'materials4', title: 'Summary' }
     ];
     

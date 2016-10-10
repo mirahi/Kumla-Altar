@@ -10,12 +10,15 @@
 angular
     .module('kumlaAltarApp')
     .controller('ParticipantsController', function ($scope, Lightbox) {
+        
+        var wrapper = document.getElementById('wrapper');
+        wrapper.style.backgroundImage = "url('images/backgrounds/project.jpg')";
 
         var vm = this;
 
         vm.images = [
             {
-                url: 'images/project/project1/1_group_metropolia.JPG',
+                url: 'images/project/project1/1_group_metropolia.jpg',
                 caption: 'First group of conservation students from Helsinki Metropolia University of Applied Sciences with their lecturer: Anna von Numers, lecturer Tannar Ruuben,Salla Koskiniemi, Aino Sainio, Susanna Belinskij and Naoko Pellinen.'
             },
             {

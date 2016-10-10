@@ -32,6 +32,17 @@
         surfaces.
     </p>
     
+    <section class="top-padding col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in conservation3.images | limitTo:5:0" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
+                <a ng-click="openLightboxModal($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
     <h2>Consolidation</h2>
     
     <p>
@@ -56,6 +67,17 @@
         the consolidated area down.
     </p>
     
+    <section class="top-padding col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in conservation3.images | limitTo:3:5" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
+                <a ng-click="openLightboxModal($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
     <h2>Varnishing</h2>
     
     <p>
@@ -72,6 +94,12 @@
     
     <h2>Filing and retouching</h2>
     
+    <figure class="col-xs-12 col-sm-8 col-md-5 pull-right">
+        <a ng-click="openLightboxModal(9)">
+            <img class="img-responsive" src="{{ conservation3.images[9].url }}" alt="{{conservation.images[0].caption}}"/>
+        </a>
+    </figure>
+    
     <p>
         Filling and retouching is considered as a restoration treatment and is commonly used to enhance the 
         object´s visual integrity and aesthetics. Filling missing areas of ground is generally not practiced on 
@@ -79,6 +107,7 @@
         European countries. Instead a delicate retouching is practiced of the areas where paint layer is missing 
         with white ground exposed, in order to visually enhance the integrity of the artwork.
     </p>
+    
     <p>
         Again, materials for retouching are numerous. Easily reversible watercolours are often used but dry 
         pigment powders in various binding mediums are very much in favor also. Again, past decades have 

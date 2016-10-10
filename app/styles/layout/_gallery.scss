@@ -3,6 +3,19 @@
     float: left;
 }
 
+.gallery-inner {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    &.left {
+        margin-right: 15px;
+    }
+    
+    &.right {
+        margin-left: 15px;
+    }
+}
+
 // THUMBNAILS
 .img-thumbnail {
     

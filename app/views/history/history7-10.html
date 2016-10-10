@@ -62,4 +62,16 @@
         The sculpture has been slightly less hollowed from the back than the other sculptures and is therefore 
         heavier than the other sculptures of the same size.
     </p>
+    
+    <section class="top-padding col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in history710.images" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
+                <a ng-click="openLightboxModal($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
 </article>

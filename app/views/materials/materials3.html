@@ -1,6 +1,12 @@
 <article>
 
-    <h1>Paint Cross-sections (+ rest)</h1>
+    <h1>Paint Cross-sections</h1>
+    
+    <figure class="col-xs-6 col-sm-3 pull-left">
+        <a ng-click="openLightboxModal(0)">
+            <img class="img-responsive" src="{{materials3.images[0].url}}" alt="{{materials3.images[0].caption}}"/>
+        </a>
+    </figure> 
 
     <h2>What are paint cross-sections?</h2>
     <p>
@@ -9,6 +15,12 @@
         when choosing a sampling location and weather to take a sample at all. Paint cross-sections have proved valuable
         when questions remain regarding an artwork’s material complexity, condition, authenticity, dating etc.
     </p>
+    
+    <figure class="col-xs-6 col-sm-3 pull-right">
+        <a ng-click="openLightboxModal(1)">
+            <img class="img-responsive" src="{{materials3.images[1].url}}" alt="{{materials3.images[1].caption}}"/>
+        </a>
+    </figure> 
 
     <h2>Preparing Cross-sections</h2>
     <p>
@@ -28,6 +40,13 @@
         some pigments will auto- fluoresce when exposed to ultraviolet light.  In addition, visual layer separation is better
         in most cases.
     </p>
+    
+    <figure class="col-xs-6 col-sm-4 col-md-3 pull-left">
+        <a ng-click="openLightboxModal(2)">
+            <img class="img-responsive" src="{{materials3.images[2].url}}" alt="{{materials3.images[2].caption}}"/>
+        </a>
+    </figure>
+    
     <p>
         In case of Kumla altar, paint cross-sections were collected in order to gain better understanding on the use of pigments
         and layering technique, including glazes, used in painted surfaces of the altar. Samples were taken from two panels
@@ -43,13 +62,16 @@
         from the sculpture of St. Olov. Areas from where the sampling was done are presented in connection to each cross-section.
     </p>
     <p>
-        The microscope images of the cross-sections show the paint layer build-up as well as combination of different pigments used
-        in each layer. The cross-sections were also analyzed under UV light and the images are included here.
+        The microscope images of the cross-sections show the paint layer build-up as well as combination of different pigments 
+        used in each layer. The cross-sections were also analyzed under UV light and the images are included here. Some of the 
+        cross-sections were additionally analyzed using SEM-EDS analysis in order to confirm some of the used pigments. 
+        Despite all the efforts, some of the pigments remain somewhat unidentified (marked with a question mark in the list of 
+        pigments, related to each cross-section image) and further analysis needs to be performed in order to obtain more data.  
     </p>
     
-    <section class="col-xs-12 gallery">
+    <section class="top-padding col-xs-12 gallery">
         <div class="row">
-            <div ng-repeat="image in materials3.images" class="img-thumbnail col-xs-4 col-sm-3 col-md-4">
+            <div ng-repeat="image in materials3.images | limitTo:10:3" class="img-thumbnail col-xs-4 col-sm-4 col-md-5ths">
                 <a ng-click="openLightboxModal($index)">
                     <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
                     </div>

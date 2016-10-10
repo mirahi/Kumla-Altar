@@ -10,29 +10,189 @@
 angular
     .module('kumlaAltarApp')
     .controller('Conservation1Controller', function ($scope, Lightbox) {
+        
+        var wrapper = document.getElementById('wrapper');
+        wrapper.style.backgroundImage = "url('images/backgrounds/conservation.jpg')";
 
         var vm = this;
         
-        vm.cleaningWax = [
+        vm.images = [
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '1. Cleaning wax',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/conservation/conservation1/wax/720_1.jpg',
+                caption: 'Cleaning wax',
+                thumbUrl: 'images/conservation/conservation1/wax/720_1.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '2. Cleaning wax',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/conservation/conservation1/wax/720_2.jpg',
+                caption: 'Cleaning wax',
+                thumbUrl: 'images/conservation/conservation1/wax/720_2.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '3. Cleaning wax',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/conservation/conservation1/wax/720_3.jpg',
+                caption: 'Cleaning wax',
+                thumbUrl: 'images/conservation/conservation1/wax/720_3.jpg'
+            },
+            // cleaning
+            {
+                url: 'images/conservation/conservation1/cleaning/720_1.jpg',
+                thumbUrl: 'images/conservation/conservation1/cleaning/720_1.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/cleaning/720_2.jpg',
+                thumbUrl: 'images/conservation/conservation1/cleaning/720_2.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/cleaning/720_3.jpg',
+                thumbUrl: 'images/conservation/conservation1/cleaning/720_3.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/cleaning/720_4.jpg',
+                thumbUrl: 'images/conservation/conservation1/cleaning/720_4.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/cleaning/720_5.jpg',
+                thumbUrl: 'images/conservation/conservation1/cleaning/720_5.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/cleaning/720_6.jpg',
+                thumbUrl: 'images/conservation/conservation1/cleaning/720_6.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/cleaning/720_7.jpg',
+                thumbUrl: 'images/conservation/conservation1/cleaning/720_7.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/cleaning/720_8.jpg',
+                thumbUrl: 'images/conservation/conservation1/cleaning/720_8.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/cleaning/720_9.jpg',
+                thumbUrl: 'images/conservation/conservation1/cleaning/720_9.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/cleaning/720_10.jpg',
+                thumbUrl: 'images/conservation/conservation1/cleaning/720_10.jpg'
+            },
+            //consolidation
+            {
+                url: 'images/conservation/conservation1/consolidation/720_1.jpg',
+                thumbUrl: 'images/conservation/conservation1/consolidation/720_1.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/consolidation/720_2.jpg',
+                thumbUrl: 'images/conservation/conservation1/consolidation/720_2.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/consolidation/720_3.jpg',
+                thumbUrl: 'images/conservation/conservation1/consolidation/720_3.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/consolidation/720_4.jpg',
+                thumbUrl: 'images/conservation/conservation1/consolidation/720_4.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/consolidation/720_5.jpg',
+                thumbUrl: 'images/conservation/conservation1/consolidation/720_5.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/consolidation/720_6.jpg',
+                thumbUrl: 'images/conservation/conservation1/consolidation/720_6.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/consolidation/720_7.jpg',
+                thumbUrl: 'images/conservation/conservation1/consolidation/720_7.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/consolidation/720_8.jpg',
+                thumbUrl: 'images/conservation/conservation1/consolidation/720_8.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/consolidation/720_9.jpg',
+                thumbUrl: 'images/conservation/conservation1/consolidation/720_9.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/consolidation/720_10.jpg',
+                thumbUrl: 'images/conservation/conservation1/consolidation/720_10.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/consolidation/720_11.jpg',
+                thumbUrl: 'images/conservation/conservation1/consolidation/720_11.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/consolidation/720_12.jpg',
+                thumbUrl: 'images/conservation/conservation1/consolidation/720_12.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/consolidation/720_13.jpg',
+                thumbUrl: 'images/conservation/conservation1/consolidation/720_13.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/consolidation/720_14.jpg',
+                thumbUrl: 'images/conservation/conservation1/consolidation/720_14.jpg'
+            },
+            //varnishing
+            {
+                url: 'images/conservation/conservation1/varnishing/720.jpg',
+                thumbUrl: 'images/conservation/conservation1/varnishing/720.jpg'
+            },
+            //retouching
+            {
+                url: 'images/conservation/conservation1/retouching/720_1.jpg',
+                thumbUrl: 'images/conservation/conservation1/retouching/720_1.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/retouching/720_2.jpg',
+                thumbUrl: 'images/conservation/conservation1/retouching/720_2.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/retouching/720_3.jpg',
+                thumbUrl: 'images/conservation/conservation1/retouching/720_3.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/retouching/720_4.jpg',
+                thumbUrl: 'images/conservation/conservation1/retouching/720_4.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/retouching/720_5.jpg',
+                thumbUrl: 'images/conservation/conservation1/retouching/720_5.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/retouching/720_6.jpg',
+                thumbUrl: 'images/conservation/conservation1/retouching/720_6.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/retouching/720_7.jpg',
+                thumbUrl: 'images/conservation/conservation1/retouching/720_7.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/retouching/720_8.jpg',
+                thumbUrl: 'images/conservation/conservation1/retouching/720_8.jpg'
+            },
+            //construction
+            {
+                url: 'images/conservation/conservation1/construction/720_1.jpg',
+                thumbUrl: 'images/conservation/conservation1/construction/720_1.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/construction/720_2.jpg',
+                thumbUrl: 'images/conservation/conservation1/construction/720_2.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/construction/720_3.jpg',
+                thumbUrl: 'images/conservation/conservation1/construction/720_3.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/construction/720_4.jpg',
+                thumbUrl: 'images/conservation/conservation1/construction/720_4.jpg'
+            },
+            {
+                url: 'images/conservation/conservation1/construction/720_5.jpg',
+                thumbUrl: 'images/conservation/conservation1/construction/720_5.jpg'
             }
         ];
         
-        $scope.openLightboxModalCleaningWax = function (index) {
-            Lightbox.openModal(vm.cleaningWax, index);
+        $scope.openLightboxModal = function (index) {
+            Lightbox.openModal(vm.images, index);
         };
         
         vm.cleaning = [

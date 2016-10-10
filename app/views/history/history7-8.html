@@ -1,5 +1,5 @@
 <article>
-    <h1>The Virgin</h1>
+    <h1>St. Peter</h1>
     
     <div class="col-xs-12 col-sm-4 pull-right">
         <table class="table table-striped">
@@ -59,4 +59,16 @@
     <p>
         <b>Other comments:</b> On the back of the sculpture, gesso has been thickly applied on top of the patch of linen cloth.
     </p>
+    
+    <section class="top-padding col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in history78.images" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
+                <a ng-click="openLightboxModal($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
 </article>

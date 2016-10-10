@@ -1,0 +1,36 @@
+'use strict';
+
+/**
+ * @ngdoc function
+ * @name kumlaAltarApp.controller:Conservation2Controller
+ * @description
+ * # Conservation2Controller
+ * Controller for conservation2 - before and after
+ */
+angular
+    .module('kumlaAltarApp')
+    .controller('Conservation2Controller', function ($scope, Lightbox) {
+        
+        var wrapper = document.getElementById('wrapper');
+        wrapper.style.backgroundImage = "url('images/backgrounds/conservation.jpg')";
+
+        var vm = this;
+        
+        vm.images = [
+            {
+                url: 'images/conservation/720_1.jpg',
+                caption: 'The whole project took place in the Swedish History Museum, in the Gothic Hall of a new exhibition for Medieval art.',
+                thumbUrl: 'images/conservation/720_1.jpg'
+            },
+            {
+                url: 'images/conservation/720_2.jpg',
+                caption: 'Students and their lecturers working in practical conservation-restoration of the altar.',
+                thumbUrl: 'images/conservation/720_2.jpg'
+            }
+        ];
+        
+        $scope.openLightboxModal = function (index) {
+            Lightbox.openModal(vm.images, index);
+        };
+
+    });

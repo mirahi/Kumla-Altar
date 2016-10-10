@@ -10,54 +10,57 @@
 angular
     .module('kumlaAltarApp')
     .controller('History42Controller', function ($scope, Lightbox) {
+        
+        var wrapper = document.getElementById('wrapper');
+        wrapper.style.backgroundImage = "url('images/backgrounds/history.jpg')";
 
         var vm = this;
 
         vm.corpus = [
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '1',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/corpus/720_1.jpg',
+                caption: 'Corpus without sculptures before conservation',
+                thumbUrl: 'images/history/history42/corpus/720_1.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '2',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/corpus/720_2.jpg',
+                caption: 'Corpus, punched halo of Holy Bishop St. Eskil',
+                thumbUrl: 'images/history/history42/corpus/720_2.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '2a',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/corpus/720_2a.jpg',
+                caption: 'Corpus, punched halo of Holy Bishop St. Eskil',
+                thumbUrl: 'images/history/history42/corpus/720_2a.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/corpus/720_3.jpg',
+                caption: 'Corpus, punched halo of the Virgin Mary',
+                thumbUrl: 'images/history/history42/corpus/720_3.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '3a',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/corpus/720_3a.jpg',
+                caption: 'Corpus, punched halo of the Virgin Mary',
+                thumbUrl: 'images/history/history42/corpus/720_3a.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '4',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/corpus/720_4.jpg',
+                caption: 'Corpus, punched halo of Christ',
+                thumbUrl: 'images/history/history42/corpus/720_4.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '4a',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/corpus/720_4a.jpg',
+                caption: 'Corpus, punched halo of Christ',
+                thumbUrl: 'images/history/history42/corpus/720_4a.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '5',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/corpus/720_5.jpg',
+                caption: 'Corpus, punched halo of St. Torkel',
+                thumbUrl: 'images/history/history42/corpus/720_5.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '5a',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/corpus/720_5a.jpg',
+                caption: 'Corpus, punched halo of St. Torkel',
+                thumbUrl: 'images/history/history42/corpus/720_5a.jpg'
             }
         ];
 
@@ -65,167 +68,166 @@ angular
             Lightbox.openModal(vm.corpus, index);
         };
 
-        vm.leftWing = [
+        vm.left = [
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '1',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/left/720_1.jpg',
+                caption: 'Inner left wing, inside without sculptures before conservation',
+                thumbUrl: 'images/history/history42/left/720_1.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '2',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/left/720_2.jpg',
+                caption: 'Inner left wing, punched halo of St. Gertrude',
+                thumbUrl: 'images/history/history42/left/720_2.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '2a',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/left/720_2a.jpg',
+                caption: 'Inner left wing, punched halo of St. Gertrude',
+                thumbUrl: 'images/history/history42/left/720_2a.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '2b',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/left/720_2b.jpg',
+                caption: 'Inner left wing, punched halo of St. Olov',
+                thumbUrl: 'images/history/history42/left/720_2b.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/left/720_3.jpg',
+                caption: 'Inner left wing, punched halo of St. Olov',
+                thumbUrl: 'images/history/history42/left/720_3.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '3a',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/left/720_3a.jpg',
+                caption: 'left, punched halo of the Virgin Mary',
+                thumbUrl: 'images/history/history42/left/720_3a.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '3b',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/left/720_3b.jpg',
+                caption: 'left, punched halo of the Virgin Mary',
+                thumbUrl: 'images/history/history42/left/720_3b.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '4',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/left/720_4.jpg',
+                caption: 'Inner left wing, punched halo of St. Peter',
+                thumbUrl: 'images/history/history42/left/720_4.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '4a',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/left/720_4a.jpg',
+                caption: 'Inner left wing, punched halo of St. Peter',
+                thumbUrl: 'images/history/history42/left/720_4a.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '4b',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/left/720_4b.jpg',
+                caption: 'Inner left wing, punched halo of St. Peter',
+                thumbUrl: 'images/history/history42/left/720_4b.jpg'
             }
         ];
 
-        $scope.openLightboxModalLeftWing = function (index) {
-            Lightbox.openModal(vm.leftWing, index);
+        $scope.openLightboxModalLeft = function (index) {
+            Lightbox.openModal(vm.left, index);
         };
         
-        vm.rightWing = [
+        vm.right = [
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '1',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/right/720_1.jpg',
+                caption: 'Inner right wing, inside without sculptures before conservation',
+                thumbUrl: 'images/history/history42/right/720_1.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '2',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/right/720_2.jpg',
+                caption: 'Inner right wing, inside without sculptures before conservation',
+                thumbUrl: 'images/history/history42/right/720_2.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '2a',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/right/720_2a.jpg',
+                caption: 'Inner right wing, inside without sculptures before conservation',
+                thumbUrl: 'images/history/history42/right/720_2a.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/right/720_3.jpg',
+                caption: 'Inner right wing, punched halo of St. Erik',
+                thumbUrl: 'images/history/history42/right/720_3.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '3a',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/right/720_3a.jpg',
+                caption: 'Inner right wing, punched halo of St. Erik',
+                thumbUrl: 'images/history/history42/right/720_3a.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '4',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/right/720_4.jpg',
+                caption: 'Inner right wing, punched halo of St. Paul',
+                thumbUrl: 'images/history/history42/right/720_4.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '4a',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/right/720_4a.jpg',
+                caption: 'Inner right wing, punched halo of St. Paul',
+                thumbUrl: 'images/history/history42/right/720_4a.jpg'
             }
         ];
 
-        $scope.openLightboxModalRightWing = function (index) {
-            Lightbox.openModal(vm.rightWing, index);
+        $scope.openLightboxModalRight = function (index) {
+            Lightbox.openModal(vm.right, index);
         };
         
         vm.other = [
-            {
-                url: 'http://placehold.it/1280x720',
-                caption: '1',
-                thumbUrl: 'http://placehold.it/150x150'
+             {
+                url: 'images/history/history42/other/720_1.jpg',
+                caption: 'Inner other wing, inside without sculptures before conservation',
+                thumbUrl: 'images/history/history42/other/720_1.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '2',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/other/720_2.jpg',
+                caption: 'Inner other wing, punched halo of St. Gertrude',
+                thumbUrl: 'images/history/history42/other/720_2.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/other/720_3.jpg',
+                caption: 'Inner other wing, punched halo of St. Olov',
+                thumbUrl: 'images/history/history42/other/720_3.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '4',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/other/720_4.jpg',
+                caption: 'Inner other wing, punched halo of St. Peter',
+                thumbUrl: 'images/history/history42/other/720_4.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '5',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/other/720_5.jpg',
+                caption: 'Inner other wing, punched halo of St. Peter',
+                thumbUrl: 'images/history/history42/other/720_5.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '6',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/other/720_6.jpg',
+                caption: 'Inner other wing, punched halo of St. Peter',
+                thumbUrl: 'images/history/history42/other/720_6.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '7',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/other/720_7.jpg',
+                caption: 'other, punched halo of the Virgin Mary',
+                thumbUrl: 'images/history/history42/other/720_7.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '8',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/other/720_8.jpg',
+                caption: 'other, punched halo of the Virgin Mary',
+                thumbUrl: 'images/history/history42/other/720_8.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '9',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/other/720_9.jpg',
+                caption: 'Inner other wing, punched halo of St. Gertrude',
+                thumbUrl: 'images/history/history42/other/720_9.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '10',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/other/720_10.jpg',
+                caption: 'Inner other wing, punched halo of St. Olov',
+                thumbUrl: 'images/history/history42/other/720_10.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '11',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/other/720_11.jpg',
+                caption: 'Inner other wing, punched halo of St. Olov',
+                thumbUrl: 'images/history/history42/other/720_11.jpg'
             },
             {
-                url: 'http://placehold.it/1280x720',
-                caption: '12',
-                thumbUrl: 'http://placehold.it/150x150'
+                url: 'images/history/history42/other/720_12.jpg',
+                caption: 'Inner other wing, punched halo of St. Olov',
+                thumbUrl: 'images/history/history42/other/720_12.jpg'
             }
-            
         ];
 
         $scope.openLightboxModalOther = function (index) {

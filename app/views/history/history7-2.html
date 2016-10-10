@@ -76,4 +76,15 @@ on of all of the pieces of parchment. The writing is best seen in UV light. No l
         <b>Other comments:</b> A possible mistake has happened during the manufacturing of the sculpture; on the right 
     side of the garment, below the orb, there is a gilded area, which has been painted over with red paint.
     </p>
+    
+    <section class="top-padding col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in history72.images" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
+                <a ng-click="openLightboxModal($index)">
+                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 </article>

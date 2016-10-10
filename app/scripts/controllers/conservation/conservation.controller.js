@@ -10,6 +10,9 @@
 angular
     .module('kumlaAltarApp')
     .controller('ConservationController', function ($scope, Lightbox) {
+        
+        var wrapper = document.getElementById('wrapper');
+        wrapper.style.backgroundImage = "url('images/backgrounds/conservation.jpg')";
 
         var vm = this;
         

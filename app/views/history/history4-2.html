@@ -12,12 +12,11 @@
     <p>
         In the corpus and on both of the insides of the inner wings, the background is gilded on a thin chalk and animal glue ground.
         The technique used is polished water gilding. There are richly punched haloes in the gilded background for each of
-        the sculptures, each and every one having different patterns. (Kuvat Haloes Corpus 1,2,3,4)(Kuvat Haloes Inner left
-        wing 1,2,3,4) (Kuvat Haloes Inner Right wing 1,2,3,4)
+        the sculptures, each and every one having different patterns.
     </p>
     <p>
         Punched haloes, although in a more simple pattern can also be found in the Passion of Christ scenes, again stamped in to
-        a polished water gilded background. (Kuvat Halos and punchwork other 1,2,3,4,)
+        a polished water gilded background.
     </p>
     <p>
         Tools used to produce the punched and impressed patterns have most probably been 5 metal punches, having rather simple shapes.
@@ -33,11 +32,11 @@
         cartoon has been used to make lines consisting of minute dots. These can be found on silvered areas on soldiers´
         armoury and helmets as well as part of the lines and delicate leaf motifs in the gilded backgrounds of the Passion
         of Christ scenes. There is a possibility that some of the tiny dotted lines and shapes have been also made by using
-        a prick punch. (Kuvat Halos and punchwork other 5,6,7,8,9, 10,11)
+        a prick punch.
     </p>
     <p>
         Main round lines for haloes in between the punched patterns in the Kumla altar are probably made with the help of compass-like
-        tool. (Kuva Halos and punchwork other 12)
+        tool.
     </p>
     
     <br />
@@ -45,7 +44,7 @@
     <br />
     <section class="gallery col-xs-12">
         <div class="row">
-            <div ng-repeat="image in history42.corpus" class="img-thumbnail col-xs-6 col-sm-3 col-md-3">
+            <div ng-repeat="image in history42.corpus" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
                 <a ng-click="openLightboxModalCorpus($index)">
                     <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
                     </div>
@@ -54,13 +53,12 @@
         </div>
     </section>
     
-    <br />
-    <h2>Inner left wing</h2>
+    <h2 class="padding-top">Inner left wing</h2>
     <br />
     <section class="gallery col-xs-12">
         <div class="row">
-            <div ng-repeat="image in history42.leftWing" class="img-thumbnail col-xs-6 col-sm-3 col-md-3">
-                <a ng-click="openLightboxModalLeftWing($index)">
+            <div ng-repeat="image in history42.left" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
+                <a ng-click="openLightboxModalLeft($index)">
                     <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
                     </div>
                 </a>
@@ -68,13 +66,12 @@
         </div>
     </section>
     
-    <br />
-    <h2>Inner right wing</h2>
+    <h2 class="padding-top">Inner right wing</h2>
     <br />
     <section class="gallery col-xs-12">
         <div class="row">
-            <div ng-repeat="image in history42.rightWing" class="img-thumbnail col-xs-6 col-sm-3 col-md-3">
-                <a ng-click="openLightboxModalRightWing($index)">
+            <div ng-repeat="image in history42.right" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
+                <a ng-click="openLightboxModalRight($index)">
                     <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
                     </div>
                 </a>
@@ -82,12 +79,11 @@
         </div>
     </section>
     
-    <br />
-    <h2>Other pictures</h2>
+    <h2 class="padding-top">Other pictures</h2>
     <br />
     <section class="gallery col-xs-12">
         <div class="row">
-            <div ng-repeat="image in history42.other" class="img-thumbnail col-xs-6 col-sm-3 col-md-3">
+            <div ng-repeat="image in history42.other" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
                 <a ng-click="openLightboxModalOther($index)">
                     <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
                     </div>
