@@ -18,59 +18,48 @@ angular
 
         vm.images = [
             {
+                url: 'images/history/history7/720_group.jpg',
+                caption: 'The sculptures'
+            },
+            {
                 url: 'images/history/history7/720_1a.jpg',
-                caption: '1',
-                thumbUrl: 'http://placehold.it/150x150'
+                caption: 'Tool marks from both straight chisels and gouges (concave chisels) and a small axe.'
             },
             {
                 url: 'images/history/history7/720_1b.jpg',
-                caption: '2',
-                thumbUrl: 'http://placehold.it/150x150'
+                caption: 'The width of the straight chisels vary between 1cm and 4 cm and the width of gouges vary between 1cm and 3,5 cm.'
             },
             {
                 url: 'images/history/history7/720_1c.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                caption: 'The width of the straight chisels vary between 1cm and 4 cm and the width of gouges vary between 1cm and 3,5 cm.'
             },
             {
                 url: 'images/history/history7/720_1d.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                caption: 'The width of the straight chisels vary between 1cm and 4 cm and the width of gouges vary between 1cm and 3,5 cm.'
             },
             {
                 url: 'images/history/history7/720_2.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                caption: 'Remains of a wooden peg'
             },
             {
                 url: 'images/history/history7/720_2a.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                caption: 'Iron hook'
             },
             {
                 url: 'images/history/history7/720_3.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                caption: '3'
             },
             {
                 url: 'images/history/history7/720_4.jpg',
                 caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
             },
             {
                 url: 'images/history/history7/720_5.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
-            },
-            {
-                url: 'images/history/history7/720_group.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                caption: '3'
             },
             {
                 url: 'images/history/history7/720_coronation.jpg',
-                caption: '3',
-                thumbUrl: 'http://placehold.it/150x150'
+                caption: '3'
             }
         ];
         

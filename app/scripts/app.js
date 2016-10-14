@@ -25,13 +25,13 @@ angular
             .state('home', {
                 url: '/home',
                 templateUrl: 'views/home.html',
-                controller: ''
+                controller: 'ProjectController as projects'
             })
             // PROJECT
             .state('project', {
                 url: '/project',
                 templateUrl: 'views/project/project.html',
-                controller: ''
+                controller: 'ProjectController as projects'
             })
             .state('project1', {
                 url: '/project/participants',
@@ -41,12 +41,12 @@ angular
             .state('project2', {
                 url: '/project/funding',
                 templateUrl: 'views/project/project2.html',
-                controller: ''
+                controller: 'ProjectController as projects'
             })
             .state('project3', {
                 url: '/project/aims-and-goals',
                 templateUrl: '../views/project/project3.html',
-                controller: ''
+                controller: 'ProjectController as projects'
             })
             // History
             .state('history', {

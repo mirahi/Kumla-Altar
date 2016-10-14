@@ -16,7 +16,7 @@
         culminating on his death on Good Friday.
     </p>
     
-    <figure class="col-xs-12 pull-left">
+    <figure class="gallery top-padding col-xs-12 pull-left">
         <a ng-click="openLightboxModal(0)">
             <img class="img-responsive" src="{{history6.images[0].url}}" alt="{{history6.images[0].caption}}"/>
         </a>
@@ -28,6 +28,44 @@
         gilded tin flowers in the middle of all the painted roundels.
     </p>
     
-    <h2></h2>
+    <h2>From left to right the panels depict in the upper series</h2>
+     <ul>
+         <li>Christ in Gethsemane</li>
+         <li>The Flagellation and Crowning</li>
+         <li>Christ before Pilate</li>
+         <li>The Carrying of the Cross</li>
+     </ul>
+    
+    <section class="col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in history6.images | limitTo:4:1" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
+                <a ng-click="openLightboxModal($index+1)">
+                    <div style="background-image: url('{{image.url}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <h2>In the lower series from left</h2>
+    <ul>
+        <li>The Crucifixion</li>
+        <li>The Deposition from the Cross</li>
+        <li>The Entombment</li>
+        <li>The Resurrection</li>
+    </ul>
+    
+    <section class="col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in history6.images | limitTo:4:5" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
+                <a ng-click="openLightboxModal($index+5)">
+                    <div style="background-image: url('{{image.url}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
     
 </article>

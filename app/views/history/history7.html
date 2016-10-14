@@ -22,8 +22,13 @@ and right is mentioned, the sculpture is always looked from the front.
         In right wing, inside, starting from the right stand St. Birgitta as the farthest, then St. Erik and as a pendant to St Peter
         stands St. Paul.
     </p>
+    <figure class="gallery top-padding col-xs-12 pull-left">
+        <a ng-click="openLightboxModal(0)">
+            <img class="img-responsive" src="{{history7.images[0].url}}" alt="{{history7.images[0].caption}}"/>
+        </a>
+    </figure>
     <p>
-        The ten polychrome sculptures of the Kumla altar-piece (kuva: Group) are all carved and decorated in the same manner and
+        The ten polychrome sculptures of the Kumla altar-piece are all carved and decorated in the same manner and
         also share same types of damages. Therefore the description of the materials and condition will be first presented
         generally for all sculptures, including timber used for carving and sculpture´s structure, metal hooks for hanging,
         linen and parchment used for joints in wood or weaker areas, surface/coatings: gesso, bole and gilding, silvering
@@ -45,36 +50,61 @@ and right is mentioned, the sculpture is always looked from the front.
         and few other parts are carved as a separate piece and attached to the sculpture with wooden pegs and glue. Backs
         of the sculptures are hollowed and untreated. On the backs there are tool marks from both straight chisels and gouges
         (concave chisels) and a small axe. The width of the straight chisels vary between 1cm and 4 cm and the width of gouges
-        vary between 1cm and 3,5 cm. (kuvat: 1a,1b,1c,1d)
+        vary between 1cm and 3,5 cm.
     </p>
+    <section class="col-xs-12 gallery">
+        <div class="row">
+            <div ng-repeat="image in history7.images | limitTo:5:1" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
+                <a ng-click="openLightboxModal($index+1)">
+                    <div style="background-image: url('{{image.url}}'); background-size: cover; width: 100%; height: 100%;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
     <p>
         On top of each saints’ head there is the remains of a wooden peg. A hole has been first drilled to the top of each sculptures’
         head and a peg has been inserted. The peg was traditionally used during the woodcarving as an aid; the sculpture
-        could be rotated in the workbench during carving, gesso application, gilding and painting. The peg helped to get
-        a grip of the sculptures in order not to touch the finished areas. After the finishes were done the peg was sawn
-        off leaving only a round area visible on the top of the head of the sculpture which usually doesn’t have any finishing
-        layer on it.(kuva: 2)
+        could be rotated in the workbench during carving, gesso application, gilding and painting.
+    </p>
+    <p>
+        The peg helped to get a grip of the sculptures in order not to touch the finished areas. After the finishes were done the 
+        peg was sawn off leaving only a round area visible on the top of the head of the sculpture which usually doesn’t have 
+        any finishing layer on it.
     </p>
     <h3>Metal hooks</h3>
+    <figure class="gallery col-xs-12 col-sm-5 col-md-5ths pull-right">
+        <a ng-click="openLightboxModal(6)">
+            <img class="img-responsive" src="{{history7.images[6].url}}" alt="{{history7.images[6].caption}}"/>
+        </a>
+    </figure>
     <p>
         An iron hook has been attached to the timber from the back of the sculptures. A hole has been drilled first either from behind
         the head or in the hollowed back for the hook. With the help of the hook the sculptures are attached to the altar-piece.
         On the surface of the original hooks there is still some red lead paint left. It has most probably been applied on
-        the metal in order to protect it from corroding.(kuva: 2a)
+        the metal in order to protect it from corroding.
     </p>
     <h3>Linen and parchment</h3>
     <p>
         During the carving, on areas where carving went too deep and the wood became too thin, also on top of wood knots and joints
         where extra pieces were added, a linen cloth or parchment was glued on the wood as an additional support for weaker
-        areas and joints in the wood. These kinds of supports were also added to prevent the finishing layers from flaking
+        areas and joints in the wood.
+    </p>
+    <figure class="gallery col-xs-12 col-sm-6 col-md-4 pull-left">
+        <a ng-click="openLightboxModal(7)">
+            <img class="img-responsive" src="{{history7.images[7].url}}" alt="{{history7.images[7].caption}}"/>
+        </a>
+    </figure>
+    <p>
+        These kinds of supports were also added to prevent the finishing layers from flaking
         when the wood would shrink or crack while drying. The supporting parchment and linen cloth have been glued on top
         of the timber on the back side of the sculpture or to the front side before applying the gesso ground.
     </p>
     <p>
         On the Virgin Mary and Christ figures, text in German can be seen on a small area of the parchment, which indicates that
-        the parchment has been recycled from old manuscripts.(kuva:3)
+        the parchment has been recycled from old manuscripts.
     </p>
-    <h3>Surface/coatings</h3>
+    <h3 class="cf">Surface/coatings</h3>
     <h4>Gesso:</h4>
     <p>
         The ground is most probably a mixture of chalk and animal glue. It has been applied on all visible surfaces of the sculpture
@@ -96,7 +126,18 @@ and right is mentioned, the sculpture is always looked from the front.
         glazing can be found on the body of the human - headed dragon, lying under St. Olov’s feet, on the walls and imitation
         stained glass windows of the church St. Gertrud is holding and in the Virgins hair.(kuvat: 4, 5)
     </p>
-    <h4>Zwischgold:</h4>
+    <figure class="gallery col-xs-12 col-sm-6 pull-left">
+        <a ng-click="openLightboxModal(8)">
+            <img class="img-responsive" src="{{history7.images[8].url}}" alt="{{history7.images[8].caption}}"/>
+        </a>
+    </figure>
+    <figure class="gallery col-xs-12 col-sm-6 pull-left">
+        <a ng-click="openLightboxModal(9)">
+            <img class="img-responsive" src="{{history7.images[9].url}}" alt="{{history7.images[9].caption}}"/>
+        </a>
+    </figure>
+    
+    <h4 class="cf">Zwischgold:</h4>
     <p>
         Zwischgold has been applied on narrow areas of the gilded garment on the both sides of the sculptures, on the areas which
         are not visible when looking at the sculptures from the front. Zwischgold is a leaf of silver covered with a very
@@ -115,12 +156,69 @@ and right is mentioned, the sculpture is always looked from the front.
     </p>
     <section class="col-xs-12 gallery">
         <div class="row">
-            <div ng-repeat="image in history7.images" class="img-thumbnail col-xs-4 col-sm-3 col-md-4">
+            <div ng-repeat="image in history7.images | limitTo:4:1" class="img-thumbnail col-xs-6 col-sm-4 col-md-5ths">
                 <a ng-click="openLightboxModal($index)">
-                    <div style="background-image: url('{{image.thumbUrl}}'); background-size: cover; width: 100%; height: 100%;">
+                    <div style="background-image: url('{{image.url}}'); background-size: cover; width: 100%; height: 100%;">
                     </div>
                 </a>
             </div>
         </div>
     </section>
+    
+    <h2>A short iconography of the Sculptures</h2>
+    
+    <h3>Sculptures in he left wing</h3>
+    
+    <p>
+        <b>St. Gertrude:</b> A German Benedictine nun saint who was born on the feast of the Epiphany, January 6, 1256.. 
+        In 1281, at the age of twenty-five, she experienced the first of a series of visions. Gertrude became one of the 
+        great mystics of the 13th century. Together with her friend and teacher St. Mechtild, she practiced a spirituality 
+        called "nuptial mysticism," that is, she came to see herself as the bride of Christ. Gertrude died at Helfta, 
+        near Eisleben, Saxony, around 1302.
+    </p>
+    <p>
+        <b>St. Olov (995 – 29 July 1030):</b> Patron saint of Norway, the king of Norway between the years of 1015 and 1028. 
+        Olaf's local canonisation was in 1164 confirmed by Pope Alexander III, making him a universally recognised saint of 
+        the Roman Catholic Church. He is also a canonised saint of the Eastern Orthodox Church (feast day celebrated July 29 
+        (translation August 3)) and one of the last famous Western saints before the Great Schism. Olaf swiftly became Norway's 
+        patron saint; his canonisation was performed only a year after his death by Bishop Grimkell. The cult of Olaf not only 
+        unified the country, it also fulfilled the conversion of the nation, something for which the king had fought so hard. 
+        St. Olaf was widely popular not only in Norway but throughout Scandinavia. Numerous churches in Norway, Sweden, and 
+        Iceland were dedicated to him.
+    </p>
+    <p>
+        <b>St. Peter:</b>Also known as Simon Peter, Simeon, or Simōn, according to the New Testament. According to the New 
+        Testament, he was one of the Twelve Apostles of Jesus Christ, leaders of the early Christian Church. An apostle and 
+        martyr. The patron saint of many churches in Sweden.
+    </p>
+    
+    <h3>Sculptures in the corpus</h3>
+
+    <p>
+        <b>St. Eskil:</b> (died 1069) Anglo-Saxon monk particularly venerated during the end of the 11th century in the Province of Södermanland, Sweden. He is the patron saint of Södermanland and the Diocese of Strängnäs. Saint Eskil made the village of Tuna (present day Eskilstuna) his missionary diocese and later, around 1080, he made a 30 kilometre journey east of Tuna to Strängnäs, an Old Norse holy place. Saint Eskil was stoned to death, according to tradition, because he disrupted a holy ritual.
+    </p>
+    <p>
+        <b>The Virgin Mary:</b> According to the New Testament, Mary, also known as Saint Mary, the Virgin Mary, Our Lady, and the Madonna, was a Galilean Jewish woman of Nazareth and the mother of Jesus. The gospels of Matthew and Luke in the New Testament describe Mary as a virgin and Christians believe that she conceived her son while a virgin by the Holy Spirit. This took place when she was already betrothed to Joseph and was awaiting the concluding rite of marriage, the formal home-taking ceremony. She married Joseph and accompanied him to Bethlehem, where Jesus was born. The Gospel of Luke begins its account of Mary's life with the Annunciation, when the Angel Gabriel appeared to her and announced her divine selection to be the mother of Jesus.
+    </p>
+    <p>
+        <b>Christ:</b> Son of the Virgin Mary. The Christ (/kraɪst/; Ancient Greek: Χριστός, Christós, meaning "anointed") is a translation of the Hebrew מָשִׁיחַ (Māšîaḥ) and the Syriac (M'shiha), the Messiah, and is used as a title for Jesus in the New Testament. Among Christians, "Christ" is treated as synonymous with Jesus of Nazareth. The followers of Jesus became known as Christians because they believed Jesus to be the Christós (from Greek, "Messiah") prophesied in the Greek Old Testament, for example in the Confession of Peter.
+    </p>
+    <p>
+        <b>St. Torkel:</b> (Torgils) From 1200-s. Local patron saint of Kumla church. Not much is known about this locally worshipped saint. A clue might come from the clocker staff in his hand (now missing from the sculpture in the Kumla altar) which might be the weapon he was martyred with. 
+    </p>
+    
+    <h3>Sculptures in he right wing</h3>
+    
+    <p>
+        <b>St. Paul:</b> An apostle and martyr. Paul the Apostle (Greek: Παῦλος Paulos), originally known as Saul of Tarsus (Hebrew: שאול התרסי‎; Greek: Σαῦλος Ταρσεύς Saulos Tarseus),was an apostle (though not one of the Twelve Apostles) who taught the gospel of Christ to the first-century world. He is generally considered one of the most important figures of the Apostolic Age. The patron saint of many churches in Sweden.
+    </p>
+    <p>
+        <b>St. Erik:</b> Eric IX of Sweden, (Swedish: Erik Jedvardsson; Erik den helige; martyred in 1160.), also called Eric the Lawgiver, Erik the Saint, Eric the Holy, and, in Sweden, Sankt Erik, meaning Saint Eric, was a Swedish king c. 1155-60. No historical records of Eric have survived, and all information about him is based on later legends that were aimed at having him established as a saint. 
+    </p>
+    <p>
+        <b>St. Birgitta:</b> Bridget of Sweden (1303 – 23 July 1373); born as Birgitta Birgersdotter, also Birgitta of Vadstena, or Saint Birgitta (Swedish: den heliga Birgitta), was a mystic and saint, and founder of the Bridgettines nuns and monks after the death of her husband of twenty years. Outside of Sweden, she was also known as the Princess of Nericia[1] and was the mother of Catherine of Vadstena.
+She is one of the six patron saints of Europe, together with Benedict of Nursia, Saints Cyril and Methodius, Catherine of Siena and Edith Stein. The only canonized saint from Sweden. 
+
+    </p>
+    
 </article>
